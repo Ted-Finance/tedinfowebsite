@@ -147,7 +147,7 @@ export default function SendReceiveMoneyDesktopOnePage() {
                   {!isOpen && (
                     <>
                       <a
-                        href="#"
+                        href="/"
                         className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
                       >
                         <Text as="p" className="!text-white-A700">
