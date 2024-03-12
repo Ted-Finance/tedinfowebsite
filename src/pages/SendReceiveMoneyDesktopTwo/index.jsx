@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { Text, Button, Img, Heading } from "../../components";
+import { Text, Button, Img, Heading, ProductDropDown } from "../../components";
+import { Link } from "react-router-dom"
 
 export default function SendReceiveMoneyDesktopTwoPage() {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Helmet>
@@ -10,63 +30,66 @@ export default function SendReceiveMoneyDesktopTwoPage() {
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full pt-[29px] gap-[11px] sm:pt-5 bg-white-A700">
-        <header className="flex flex-row md:flex-col justify-between items-center w-[80%] md:gap-10">
-          <Img src="images/img_group_150x207.svg" alt="image" className="h-[164px]" />
-          <div className="flex flex-row md:flex-col justify-between items-center w-full mt-[37px] mx-auto md:gap-10 md:mt-0 md:px-5 max-w-[900px]">
-            <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10">
-              <a
-                href="#"
-                className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-              >
-                <Text as="p" className="!text-white-A700">
-                  Home
-                </Text>
-              </a>
-              <a
-                href="#"
-                className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-              >
-                <Text as="p" className="!text-white-A700">
-                  Products
-                </Text>
-              </a>
-              <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
-                Learn
-              </Button>
-              <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
-                Company
-              </Button>
+        <Img src="images/Logo-one-white.svg" alt="image" className="h-[164px] mr-[73rem] mt-10" />
+        <header className="flex flex-row md:flex-col justify-between items-center w-[59%] md:w-full mt-[-160px] ml-[30rem] md:gap-10 md:ml-0 md:mt-0 z-[1] relative">
+          <div className="flex flex-row sm:flex-col justify-between w-[60%] md:w-full sm:gap-10">
+            <a
+              href="/"
+              className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+            >
+              <p className="!text-white-A700">Home</p>
+            </a>
+            <div
+              className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+              onClick={toggleMenu}
+            >
+              <p className="!text-white-A700">Products</p>
             </div>
-            <ul className="flex flex-row justify-start items-center gap-[30px]">
-              <li>
-                <a href="#" className="cursor-pointer hover:bg-light_blue-300">
-                  <Text as="p" className="!text-gray-900_01">
-                    Sign Up
-                  </Text>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
-                >
-                  <Text as="p" className="!text-gray-900_05 !font-medium">
-                    Login
-                  </Text>
-                </a>
-              </li>
-            </ul>
+            <div className="flex flex-row justify-center p-[13px] bg-purple-400 rounded-[25px]">
+              <p className="!text-white-A700 cursor-pointer">Learn</p>
+            </div>
+            <div className="flex flex-row justify-center p-[11px] bg-purple-400 rounded-[25px]">
+              <Link to="/about">
+                <p className="mt-1 !text-white-A700 cursor-pointer">Company</p>
+              </Link>
+            </div>
           </div>
+          <ul className="flex flex-row justify-start items-center gap-[30px]">
+            <li>
+              <a href="#" className="cursor-pointer hover:bg-light_blue-300">
+                <Text as="p" className="!text-gray-900_01">
+                  Sign Up
+                </Text>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-white-A700 hover:font-normal"
+              >
+                <p className="!text-gray-900_05 !font-medium">Login</p>
+              </a>
+            </li>
+          </ul>
+          {isOpen && (
+            <div
+              ref={dropdownRef}
+              className="absolute top-full left-0 z-[2] bg-white-A700 rounded-lg shadow-lg"
+              style={{ marginTop: '5px', width: '399px', height: '411px' }}
+            >
+              <ProductDropDown toggleMenu={toggleMenu} />
+            </div>
+          )}
         </header>
         <div className="flex flex-col items-center justify-start w-full gap-[123px]">
           <div className="flex flex-col items-center justify-start w-full">
             <div className="flex flex-col items-center justify-start w-full">
               <div className="h-[1102px] w-full md:px-5 relative max-w-[1411px]">
-                <div className="flex flex-row md:flex-col justify-center items-start w-full top-0 right-0 left-0 m-auto md:gap-5 absolute">
+                <div className="flex flex-row md:flex-col justify-center items-start w-full top-0 right-0 left-0 m-auto md:gap-5 absolute mt-[6rem]">
                   <Text
                     size="7xl"
                     as="p"
-                    className="w-[48%] mt-[146px] md:mt-0 !text-black-900_02 tracking-[-1.20px] !font-poppins !font-medium z-[1]"
+                    className="w-[48%] mt-[120px] md:mt-0 !text-black-900_02 tracking-[-1.20px] !font-poppins !font-medium"
                   >
                     <>
                       TedFinance is a revolutionary finance wallet app <br />
@@ -79,7 +102,7 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                     </>
                   </Text>
                   <div className="flex flex-row md:flex-col justify-center items-start w-full ml-[-666px] md:gap-5 md:ml-0">
-                    <Heading size="6xl" as="h1" className="mt-[22px] md:mt-0">
+                    <Heading size="4xl" as="h1" className="mt-[22px] md:mt-0 mr-[5.6rem]">
                       About Us.
                     </Heading>
                     <Img
@@ -98,7 +121,7 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                 >
                   Get Started Now
                 </Button>
-                <Heading size="4xl" as="h2" className="w-max left-0 bottom-0 top-0 m-auto absolute">
+                <Heading size="4xl" as="h2" className="w-max left-0 bottom-0 top-0 m-auto absolute mt-[33rem]">
                   Mission
                 </Heading>
                 <Text
@@ -141,7 +164,7 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                   className="h-[382px] right-[1%] top-[2%] m-auto absolute"
                 />
               </div>
-              <div className="flex flex-row sm:flex-col justify-start w-full mt-[26px] gap-5 md:px-5 sm:gap-5 max-w-[1749px]">
+              <div className="flex flex-row sm:flex-col justify-start w-full mt-[26px] gap-5 md:px-5 sm:gap-5 max-w-[1749px] animate-horizontal">
                 <Img
                   src="images/img_3d_rendering_ba.png"
                   alt="3drenderingba"
@@ -248,7 +271,7 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                   className="w-[2%] md:h-auto sm:w-full object-cover rounded-[10px]"
                 />
               </div>
-              <Heading size="4xl" as="h3" className="mt-px">
+              <Heading size="4xl" as="h3" className="mt-[32px] mr-[71rem]">
                 Vision
               </Heading>
               <Text
@@ -257,39 +280,61 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                 className="w-[77%] mt-[19px] !text-black-900_02 tracking-[-1.20px] !font-poppins text-justify !font-medium"
               >
                 <span className="text-black-900_02">
-                  <>
-                    We envision a world where geographical borders no longer restrict your financial potential.
-                    TedFinance aspires to be the leading global finance app, offering an unparalleled user experience
-                    and fostering financial freedom for everyone.
-                    <br />
-                  </>
+                  We envision a world where geographical borders no longer restrict your financial potential.
+                  TedFinance aspires to be the leading global finance app, offering an unparalleled user experience
+                  and fostering financial freedom for everyone.
+                  <br /><br />
                 </span>
+
                 <span className="text-black-900_02 font-bold">
-                  <>
-                    Key Features
-                    <br />
-                    International Money Transfers: 
-                  </>
+                  Key Features
+                  <br />
                 </span>
-                <span className="text-black-900_02">
-                  <>
-                    Send and receive money seamlessly from any country, with competitive exchange rates and low fees.
-                    <br />
-                  </>
-                </span>
-                <span className="text-black-900_02 font-bold">
-                  <>
-                    US Dollar Virtual Card: Enjoy the convenience and security of a virtual card for online transactions
-                    anywhere in the world. Make purchases and pay bills in USD without currency exchange hassles.
-                    <br />
-                    Secure Platform: TedFinance prioritizes your financial security. We use industry-leading security
-                    protocols and data encryption to safeguard your information and transactions.
-                    <br />
-                    User-Friendly Interface: Our app is designed for ease of use. Navigate features intuitively and
-                    manage your finances effortlessly.
-                  </>
-                </span>
+
+                <ul className="list-disc ml-6">
+                  <li>
+                    <span className="text-black-900_02 font-bold">
+                      International Money Transfers: {""}{""}
+                    </span>
+                    <span className="text-black-900_02">
+                      Send and receive money seamlessly from any country, with competitive exchange rates and low fees.
+                    </span>
+                  </li>
+                  <br />
+
+                  <li>
+                    <span className="text-black-900_02 font-bold">
+                      US Dollar Virtual Card: {""}{""}
+                    </span>
+                    <span className="text-black-900_02">
+                      Enjoy the convenience and security of a virtual card for online transactions
+                      anywhere in the world. Make purchases and pay bills in USD without currency exchange hassles.
+                    </span>
+                  </li>
+                  <br />
+                  <li>
+                    <span className="text-black-900_02 font-bold">
+                      Secure Platform: {""}{""}
+                    </span>
+                    <span className="text-black-900_02">
+                      TedFinance prioritizes your financial security. We use industry-leading security
+                      protocols and data encryption to safeguard your information and transactions.
+                    </span>
+                  </li>
+                  <br /> 
+
+                  <li>
+                    <span className="text-black-900_02 font-bold">
+                      User-Friendly Interface: {""}{""}
+                    </span>
+                    <span className="text-black-900_02">
+                      Our app is designed for ease of use. Navigate features intuitively and
+                      manage your finances effortlessly.
+                    </span>
+                  </li>
+                </ul>
               </Text>
+
               <div className="flex flex-col items-center justify-start w-full mt-[5px] gap-[41px] md:px-5 max-w-[1404px]">
                 <div className="flex flex-row justify-center w-[96%] md:w-full">
                   <div className="flex flex-row md:flex-col justify-center items-start w-full md:gap-5">
@@ -298,7 +343,7 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                       alt="imageone_one"
                       className="w-[55%] md:w-full md:h-[485px] z-[1] object-cover"
                     />
-                    <div className="flex flex-col items-center justify-start w-[47%] md:w-full mt-[37px] ml-[-11px] md:ml-0 md:mt-0">
+                    <div className="flex flex-col items-center justify-start w-[47%] md:w-full mt-[37px] md:ml-0 md:mt-0">
                       <Heading size="4xl" as="h4">
                         Join the TedFince Today
                       </Heading>
