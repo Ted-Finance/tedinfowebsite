@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { Text, Button, Img, Heading } from "../../components";
+import { Text, Button, Img, Heading, ProductDropDown } from "../../components";
 
 export default function SendReceiveMoneyDesktopOnePage() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Helmet>
@@ -18,72 +38,82 @@ export default function SendReceiveMoneyDesktopOnePage() {
               className="h-[382px] w-[23%] sm:w-full right-0 top-[11%] m-auto object-cover absolute"
             />
             <div className="flex flex-row md:flex-col justify-center items-start w-full h-full left-0 bottom-0 right-0 top-0 m-auto md:gap-5 absolute">
-              <div className="flex flex-row md:flex-col justify-start w-[47%] md:w-full mt-[703px] gap-5 md:mt-0 z-[1]">
+              <div className="flex flex-row md:flex-col justify-start w-[47%] md:w-full mt-[703px] gap-5 md:mt-0 animate-horizontal">
                 <Img
                   src="images/img_3d_rendering_ba_9.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_10.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_11.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_12.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_13.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_14.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_15.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_16.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_17.png"
                   alt="3drenderingba"
-                  className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
                 <Img
                   src="images/img_3d_rendering_ba_60x27.png"
                   alt="3drenderingba"
-                  className="w-[4%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                />
+                <Img
+                  src="images/img_3d_rendering_ba_9.png"
+                  alt="3drenderingba"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                />
+                <Img
+                  src="images/img_3d_rendering_ba_10.png"
+                  alt="3drenderingba"
+                  className="w-[45%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                 />
               </div>
               <Img
                 src="images/img_mockup_1581x1660.png"
                 alt="mockup_one"
-                className="w-[98%] md:w-full md:h-[1581px] ml-[-751px] md:ml-0 object-cover"
+                className="w-[98%] md:w-full md:h-[1581px] ml-[10rem] md:ml-0 object-cover z-[1]"
               />
             </div>
             <div className="flex flex-col items-center justify-start w-[33%] left-[9%] top-[17%] m-auto absolute">
-              <Heading size="3xl" as="h1" className="!font-bold">
+              <Heading size="3xl" as="h1" className="!font-bold mr-[12.5rem]">
                 <>
                   Smart Virtual <br />
                   US Dollar Card
                 </>
               </Heading>
-              <Text size="8xl" as="p" className="mt-[-65px] !text-black-900_02 !font-poppins">
+              <Text size="8xl" as="p" className=" !text-black-900_02 !font-poppins mt-[2rem]">
                 <>
                   You can now Shop online, Pay subscription <br />
                   and lots more with TedFinance Smart Virtual <br />
@@ -109,52 +139,68 @@ export default function SendReceiveMoneyDesktopOnePage() {
                 className="w-[98%] md:w-full md:h-[586px] mt-[-3px] object-cover rounded-[20px]"
               />
             </div>
+            <Img src="images/img_group_150x207.svg" alt="image" className="h-[164px] ml-[9rem] mt-10" />
             <header className="flex flex-row md:flex-col justify-between items-center w-[80%] top-0 right-0 left-0 m-auto md:gap-10 absolute">
-              <Img src="images/img_group_150x207.svg" alt="image" className="h-[164px]" />
-              <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full mt-[37px] md:gap-10 md:mt-0">
-                <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10">
-                  <a
-                    href="#"
-                    className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                  >
-                    <Text as="p" className="!text-white-A700">
-                      Home
-                    </Text>
-                  </a>
-                  <a
-                    href="#"
-                    className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                  >
-                    <Text as="p" className="!text-white-A700">
-                      Products
-                    </Text>
-                  </a>
-                  <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
-                    Learn
-                  </Button>
-                  <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
-                    Company
-                  </Button>
+
+              <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full ml-[35rem] mt-[37px] md:gap-10 md:mt-0">
+                <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10 z-[1]">
+                  {!isOpen && (
+                    <>
+                      <a
+                        href="/"
+                        className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                      >
+                        <Text as="p" className="!text-white-A700">
+                          Home
+                        </Text>
+                      </a>
+                      <a
+                        href="#"
+                        className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                        onClick={toggleMenu}
+                      >
+                        <Text as="p" className="!text-white-A700">
+                          Products
+                        </Text>
+                      </a>
+                    </>)}
+                  {isOpen && (
+                    <div ref={dropdownRef}>
+                      <ProductDropDown toggleMenu={toggleMenu} />
+                    </div>
+                  )}
+                  {!isOpen && (
+                    <>
+                      <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
+                        Learn
+                      </Button>
+                      <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
+                        Company
+                      </Button>
+                    </>)}
                 </div>
-                <ul className="flex flex-row justify-start items-center gap-[30px]">
-                  <li>
-                    <a href="#" className="cursor-pointer hover:bg-light_blue-300">
-                      <Text as="p" className="!text-gray-900_01">
-                        Sign Up
-                      </Text>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
-                    >
-                      <Text as="p" className="!text-gray-900_05 !font-medium">
-                        Login
-                      </Text>
-                    </a>
-                  </li>
-                </ul>
+                {!isOpen && (
+                  <>
+                    <ul className="flex flex-row justify-start items-center gap-[30px]">
+                      <li>
+                        <a href="#" className="cursor-pointer hover:bg-light_blue-300">
+                          <Text as="p" className="!text-gray-900_01">
+                            Sign Up
+                          </Text>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
+                        >
+                          <Text as="p" className="!text-gray-900_05 !font-medium">
+                            Login
+                          </Text>
+                        </a>
+                      </li>
+                    </ul>
+                  </>)}
               </div>
             </header>
           </div>
@@ -185,14 +231,14 @@ export default function SendReceiveMoneyDesktopOnePage() {
             <div className="flex flex-row md:flex-col justify-center items-start w-[98%] md:w-full md:gap-5">
               <Text size="8xl" as="p" className="w-[29%] mt-3.5 md:mt-0 !text-black-900_02 !font-poppins text-center">
                 <>
-                  Your can generate and instant receipt of payment in a sec., <br />
+                  Your can generate and instant receipt of payment in a sec.,
                   for free{" "}
                 </>
               </Text>
               <Text
                 size="8xl"
                 as="p"
-                className="w-[28%] ml-[127px] md:ml-5 !text-black-900_02 !font-poppins text-center"
+                className="w-[28%] ml-[257px] md:ml-5 !text-black-900_02 !font-poppins text-center"
               >
                 <>
                   Your Tourist is covered with your TedFinance Virtual <br />
@@ -202,7 +248,7 @@ export default function SendReceiveMoneyDesktopOnePage() {
               <Text
                 size="8xl"
                 as="p"
-                className="mt-3.5 ml-[105px] md:ml-5 md:mt-0 !text-black-900_02 !font-poppins text-center"
+                className="mt-3.5 ml-[165px] md:ml-5 md:mt-0 !text-black-900_02 !font-poppins text-center"
               >
                 Your Payments are Highly secured with a backend encrypted{" "}
               </Text>
@@ -225,7 +271,7 @@ export default function SendReceiveMoneyDesktopOnePage() {
               />
             </div>
           </div>
-          <div className="flex flex-row justify-start w-full mt-[133px] pb-14 md:pb-5 md:px-5 border border-solid lime_500_33_lime_500_33_border bg-purple-400 max-w-[1404px] rounded-[20px]">
+          <div className="flex flex-row justify-start w-full mt-[133px] pb-14 md:pb-5 md:px-5 border border-solid lime_450_33_lime_450_33_border bg-purple-400 max-w-[1404px] rounded-[20px]">
             <div className="flex flex-row md:flex-col justify-between items-center w-[95%] md:gap-10">
               <div className="flex flex-row justify-center w-[75%] md:w-full">
                 <div className="flex flex-row md:flex-col justify-center items-center w-full md:gap-5">
@@ -235,7 +281,7 @@ export default function SendReceiveMoneyDesktopOnePage() {
                     className="w-[29%] md:w-full md:h-[298px] object-cover"
                   />
                   <div className="flex flex-col items-center justify-start w-[92%] md:w-full ml-[-203px] gap-3.5 md:ml-0">
-                    <Text size="11xl" as="p" className="!text-light_blue-300 leading-[150%]">
+                    <Text size="11xl" as="p" className="!text-light_blue-300 leading-[145%]">
                       <span className="text-light_blue-300">Start your financial journey with </span>
                       <span className="text-white-A700">TedFinance today!</span>
                     </Text>
@@ -251,11 +297,11 @@ export default function SendReceiveMoneyDesktopOnePage() {
               </Button>
             </div>
           </div>
-          <footer className="flex justify-center items-center w-full mt-[123px] p-[50px] md:p-5 bg-gray-900_05">
-            <div className="flex flex-col items-center justify-center w-[87%] md:w-full mt-[50px] gap-[49px]">
-              <div className="flex flex-col items-center justify-start w-full gap-[50px]">
+          <footer className="flex justify-center items-center w-full mt-[123px] p-[45px] md:p-5 bg-gray-900_05">
+            <div className="flex flex-col items-center justify-center w-[87%] md:w-full mt-[45px] gap-[49px]">
+              <div className="flex flex-col items-center justify-start w-full gap-[45px]">
                 <Img src="images/img_group_white_a700.svg" alt="image_one" className="h-[121px]" />
-                <div className="flex flex-col items-center justify-start w-full gap-[50px]">
+                <div className="flex flex-col items-center justify-start w-full gap-[45px]">
                   <div className="flex flex-row justify-center w-full">
                     <ul className="flex flex-row justify-between w-[24%]">
                       <li>
@@ -285,7 +331,7 @@ export default function SendReceiveMoneyDesktopOnePage() {
               </div>
               <div className="flex flex-row md:flex-col justify-start items-center w-full pl-[326px] pr-14 gap-5 md:px-5">
                 <div className="flex flex-row justify-start items-center w-[22%] md:w-full gap-1.5">
-                  <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_one" className="h-[24px] w-[24px]" />
+                  <Img src="images/img_icon_lime_450_24x24.svg" alt="icon_one" className="h-[24px] w-[24px]" />
                   <Text as="p">info@tedfinance.com</Text>
                 </div>
                 <div className="flex flex-row justify-start items-center w-[19%] md:w-full gap-1.5">
@@ -306,13 +352,13 @@ export default function SendReceiveMoneyDesktopOnePage() {
               <div className="h-px w-full bg-gray-900_04" />
               <div className="flex flex-row md:flex-col justify-between items-center w-full p-4 md:gap-10 border-gray-900_04 border border-solid bg-gray-900 rounded-[42px]">
                 <div className="flex flex-row justify-start gap-3.5">
-                  <Button color="lime_500" shape="circle" className="w-[52px]">
+                  <Button color="lime_450" shape="circle" className="w-[52px]">
                     <Img src="images/img_icon_gray_900_04.svg" />
                   </Button>
-                  <Button color="lime_500" shape="circle" className="w-[52px]">
+                  <Button color="lime_450" shape="circle" className="w-[52px]">
                     <Img src="images/img_icon_gray_900_04_52x52.svg" />
                   </Button>
-                  <Button color="lime_500" shape="circle" className="w-[52px]">
+                  <Button color="lime_450" shape="circle" className="w-[52px]">
                     <Img src="images/img_button.svg" />
                   </Button>
                 </div>

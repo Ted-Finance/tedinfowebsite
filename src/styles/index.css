@@ -51,3 +51,20 @@ input:focus {
 .lime_500_33_lime_500_33_border {
   border-image: linear-gradient(180deg, #caff3333, #caff3333) 1;
 }
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-horizontal {
+  display: flex;
+  animation: moveHorizontal 10s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+
+
+
