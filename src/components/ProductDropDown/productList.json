@@ -1,0 +1,26 @@
+[
+    {
+        "icon": "images/send_recieve.svg",
+        "name": "Send/Receive money",
+        "sunName": "You can now Send/ receive from all countries",
+        "path": "sendreceivemoney"
+    },
+    {
+        "icon": "images/convert.svg",
+        "name": "Currency Exchange",
+        "sunName": "Convert your currency to over 5 foreign currencies",
+        "path": "exchange"
+    },
+    {
+        "icon": "images/card.svg",
+        "name": "Virtual Dollar Card",
+        "sunName": "Shop, pay for subscriptions directly in USD",
+        "path": "virtualcard"
+    },
+    {
+        "icon": "images/investment.svg",
+        "name": "Investment",
+        "sunName": "Unlock your financial potential by investing",
+        "path": "investment"
+    }
+]

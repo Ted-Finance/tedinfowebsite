@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { Text, Button, Img, Heading } from "../../components";
+import { Text, Button, Img, Heading, ProductDropDown } from "../../components";
 
 export default function ExchangeDesktopPage() {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Helmet>
@@ -22,60 +41,82 @@ export default function ExchangeDesktopPage() {
                 <Img
                   src="images/img_mockup_2.png"
                   alt="mockup_one"
-                  className="justify-center h-[1581px] w-full sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
+                  className="justify-center h-[1581px] w-full sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute ml-[10rem]"
                 />
+                <Img src="images/img_group_150x207.svg" alt="image" className="h-[150px] ml-[6rem] mt-10" />
                 <div className="flex flex-col items-start justify-start w-[83%] left-[6%] top-0 m-auto absolute">
                   <header className="flex flex-row md:flex-col justify-between items-center w-full ml-0.5 md:gap-10 md:ml-0">
-                    <Img src="images/img_group_150x207.svg" alt="image" className="h-[150px]" />
-                    <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full mt-[39px] md:gap-10 md:mt-0">
-                      <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10">
-                        <a
-                          href="#"
-                          className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                        >
-                          <Text as="p" className="!text-white-A700">
-                            Home
-                          </Text>
-                        </a>
-                        <a
-                          href="#"
-                          className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                        >
-                          <Text as="p" className="!text-white-A700">
-                            Products
-                          </Text>
-                        </a>
-                        <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
-                          Learn
-                        </Button>
-                        <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
-                          Company
-                        </Button>
+                    <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full ml-[38rem] mt-[39px] md:gap-10 md:mt-0">
+                      <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10 z-[1]">
+                        {!isOpen && (
+                          <>
+                            <a
+                              href="#"
+                              className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                            >
+                              <Text as="p" className="!text-white-A700">
+                                Home
+                              </Text>
+                            </a>
+                            <a
+                              href="#"
+                              className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                              onClick={toggleMenu}
+                            >
+                              <Text as="p" className="!text-white-A700">
+                                Products
+                              </Text>
+                            </a>
+                          </>)}
+                        {isOpen && (
+                          <div ref={dropdownRef}>
+                            <ProductDropDown toggleMenu={toggleMenu} />
+                          </div>
+                        )}
+                        {!isOpen && (
+                          <>
+                            <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
+                              Learn
+                            </Button>
+                            <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
+                              Company
+                            </Button>
+                          </>)}
                       </div>
-                      <ul className="flex flex-row justify-start items-center gap-[30px]">
-                        <li>
-                          <a href="#" className="cursor-pointer hover:bg-light_blue-300">
-                            <Text as="p" className="!text-gray-900_01">
-                              Sign Up
-                            </Text>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
-                          >
-                            <Text as="p" className="!text-gray-900_05 !font-medium">
-                              Login
-                            </Text>
-                          </a>
-                        </li>
-                      </ul>
+                      {!isOpen && (
+                        <>
+                          <ul className="flex flex-row justify-start items-center gap-[30px]">
+                            <li>
+                              <a href="#" className="cursor-pointer hover:bg-light_blue-300">
+                                <Text as="p" className="!text-gray-900_01">
+                                  Sign Up
+                                </Text>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
+                              >
+                                <Text as="p" className="!text-gray-900_05 !font-medium">
+                                  Login
+                                </Text>
+                              </a>
+                            </li>
+                          </ul>
+                        </>)}
                     </div>
                   </header>
-                  <Heading size="3xl" as="h1" className="w-[42%] mt-[114px] ml-0.5 md:ml-0">
-                    Currency Exchange To all Currencies Now Made Easy
-                  </Heading>
+                  {!isOpen ? (
+                    <Heading size="3xl" as="h1" className="w-[42%] mt-[195px] ml-0.5 md:ml-0">
+                      Currency Exchange To all Currencies Now Made Easy
+                    </Heading>
+                  ) : (
+                    <Heading size="3xl" as="h1" className="w-[42%] mt-[-164px] ml-0.5 md:ml-0">
+                      Currency Exchange To all Currencies Now Made Easy
+                    </Heading>
+                  )}
+
                   <Text size="10xl" as="p" className="w-[47%] mt-[25px] !text-black-900_02 !font-poppins">
                     <>
                       Convert your currency to over 5 foreign <br />
@@ -91,7 +132,7 @@ export default function ExchangeDesktopPage() {
                   >
                     Get Started Now
                   </Button>
-                  <Heading size="xl" as="h2" className="w-[22%] mt-[108px] ml-6 md:ml-0 sm:ml-5 z-[1]">
+                  <Heading size="xl" as="h2" className="w-[22%] mt-[108px] mb-[20px] ml-6 md:ml-0 sm:ml-5 z-[1]">
                     <>
                       Conversion <br />
                       Highly Secured
@@ -129,7 +170,7 @@ export default function ExchangeDesktopPage() {
                     </Text>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-start w-[57%] md:w-full gap-[30px]">
+                <div className="flex flex-col items-center justify-start w-[57%] md:w-full gap-[30px] mr-[-9rem]">
                   <div className="flex flex-col items-center justify-start h-[98px] w-[98px] p-3 bg-gradient3 rounded-[50%]">
                     <div className="flex flex-col items-center justify-start h-[74px] w-[74px] p-5 border border-solid lime_500_33_lime_500_33_border bg-gradient5 rounded-[50%]">
                       <Img src="images/img_icon_34x34.png" alt="icon_one" className="w-[34px] md:h-auto object-cover" />

@@ -1,8 +1,30 @@
-import React from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { Text, Button, Img, Heading, Input } from "../../components";
+import { Text, Button, Img, Heading, Input, ProductDropDown } from "../../components";
 
 export default function HomePageDesktopPage() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  
   return (
     <>
       <Helmet>
@@ -23,7 +45,7 @@ export default function HomePageDesktopPage() {
             color="white_A700"
             size="4xl"
             rightIcon={<Img src="images/img_arrowright.svg" alt="arrow-right" />}
-            className="mt-[5px] gap-2.5 md:mt-0 font-poppins font-bold min-w-[184px] rounded-[30px]"
+            className="mt-[5px] gap-2.5 md:mt-0 font-poppins font-bold min-w-[184px] rounded-[30px] cursor-pointer"
           >
             Get Started
           </Button>
@@ -50,6 +72,7 @@ export default function HomePageDesktopPage() {
           <div className="flex flex-col items-center justify-start w-full">
             <div className="flex flex-col items-end justify-start w-full md:px-5 max-w-[1713px]">
               <div className="h-[712px] w-full relative">
+  
                 <div className="h-[467px] w-[40%] md:w-full bottom-[3%] right-0 m-auto absolute">
                   <Img
                     src="images/img_abstract_design.svg"
@@ -73,7 +96,7 @@ export default function HomePageDesktopPage() {
                 </div>
                 <div className="flex flex-col items-start justify-start w-[90%] h-full left-0 bottom-0 top-0 m-auto absolute">
                   <div className="flex flex-row md:flex-col justify-start items-start w-full md:gap-5">
-                    <div className="h-[498px] w-[45%] md:w-full z-[1] relative">
+                    <div className="h-[498px] w-[44%] md:w-full z-[1] relative">
                       <Img
                         src="images/img_abstract_design_498x689.png"
                         alt="abstractdesign"
@@ -85,35 +108,48 @@ export default function HomePageDesktopPage() {
                         className="h-[150px] left-[24%] top-[14%] m-auto absolute"
                       />
                     </div>
-                    <header className="flex flex-row md:flex-col justify-between items-center w-[59%] md:w-full mt-[70px] ml-[-56px] md:gap-10 md:ml-0 md:mt-0">
+                    <header className="flex flex-row md:flex-col justify-between items-center w-[59%] md:w-full mt-[70px] ml-[-56px] md:gap-10 md:ml-0 md:mt-0 z-[1]">
                       <div className="flex flex-row sm:flex-col justify-between w-[60%] md:w-full sm:gap-10">
+                      {!isOpen && (
+                        <>
                         <a
                           href="#"
-                          className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                          className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
                         >
                           <Text as="p" className="!text-white-A700">
                             Home
                           </Text>
                         </a>
                         <a
-                          href="#"
-                          className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                          className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+                          onClick={toggleMenu}
                         >
                           <Text as="p" className="!text-white-A700">
                             Products
                           </Text>
-                        </a>
+                        </a> 
+                        </>)}
+                        {isOpen && (
+                          <div ref={dropdownRef}>
+                            <ProductDropDown toggleMenu={toggleMenu}/>
+                          </div>
+                        )}
+                        {!isOpen && (
+                          <>
                         <div className="flex flex-row justify-center p-[13px] bg-purple-400 rounded-[25px]">
-                          <Text as="p" className="!text-white-A700">
+                          <Text as="p" className="!text-white-A700 cursor-pointer">
                             Learn
                           </Text>
                         </div>
                         <div className="flex flex-row justify-center p-[11px] bg-purple-400 rounded-[25px]">
-                          <Text as="p" className="mt-1 !text-white-A700">
+                          <Text as="p" className="mt-1 !text-white-A700 cursor-pointer">
                             Company
                           </Text>
                         </div>
+                        </>)}
                       </div>
+                      {!isOpen && (
+                        <>
                       <ul className="flex flex-row justify-start items-center gap-[30px]">
                         <li>
                           <a href="#" className="cursor-pointer hover:bg-light_blue-300">
@@ -133,9 +169,10 @@ export default function HomePageDesktopPage() {
                           </a>
                         </li>
                       </ul>
+                      </>)}
                     </header>
                   </div>
-                  <div className="flex flex-row justify-start w-[48%] md:w-full mt-[-200px] ml-[162px] md:ml-5 z-[1]">
+                  <div className="flex flex-row justify-start w-[48%] md:w-full mt-[-200px] ml-[162px] md:ml-5">
                     <div className="flex flex-col items-start justify-start w-full gap-5">
                       <Input
                         shape="round"
@@ -145,13 +182,13 @@ export default function HomePageDesktopPage() {
                         className="w-[51%]"
                       />
                       <div className="flex flex-col items-center justify-start gap-3.5">
-                        <Heading size="3xl" as="h2" className="!text-gray-900_01">
+                        <Heading size="2xl" as="h2" className="!text-gray-900_01">
                           <>
                             Welcome to TedFinance <br />
                             Your Secure, Streamlined Global Financial access.
                           </>
                         </Heading>
-                        <Heading size="lg" as="h3" className="!text-gray-900_03 leading-[150%]">
+                        <Heading size="md" as="h3" className="!text-gray-900_03 leading-[150%]">
                           A mobile application designed to empower you with the freedom and flexibility to manage your
                           finances effortlessly all over the globe.
                         </Heading>
@@ -160,7 +197,7 @@ export default function HomePageDesktopPage() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-start w-[43%] md:w-full mt-[-364px] mr-[98px] md:mr-5 z-[1]">
+              <div className="flex flex-col items-center justify-start w-[43%] md:w-full mt-[-340px] mr-[90px] md:mr-5 z-[1]">
                 <div className="flex flex-row md:flex-col justify-center items-center w-full md:gap-5">
                   <div className="flex flex-col items-center justify-start w-[48%] md:w-full z-[1]">
                     <div className="h-[650px] w-full relative">
@@ -670,7 +707,7 @@ export default function HomePageDesktopPage() {
                   <Button
                     size="4xl"
                     rightIcon={<Img src="images/img_vector_9.svg" alt="Vector 9" />}
-                    className="gap-1 sm:px-5 font-inter min-w-[193px] rounded-[31px] sm:min-w-full"
+                    className="gap-1 sm:px-5 font-inter min-w-[193px] rounded-[31px] sm:min-w-full mt-4"
                   >
                     Load All FAQ’s
                   </Button>
@@ -784,7 +821,7 @@ export default function HomePageDesktopPage() {
                           alt="abstractdesign"
                           className="w-[29%] md:w-full md:h-[298px] object-cover"
                         />
-                        <div className="flex flex-col items-center justify-start w-[92%] md:w-full ml-[-203px] gap-3.5 md:ml-0">
+                        <div className="flex flex-col items-center justify-start w-[92%] md:w-full ml-[-250px] gap-3.5 md:ml-0">
                           <Text size="11xl" as="p" className="!text-light_blue-300 leading-[150%]">
                             <span className="text-light_blue-300">Start your financial journey with </span>
                             <span className="text-white-A700">TedFinance today!</span>
@@ -796,7 +833,7 @@ export default function HomePageDesktopPage() {
                         </div>
                       </div>
                     </div>
-                    <Button color="white_A700" size="4xl" className="sm:px-5 font-medium min-w-[185px] rounded-[31px]">
+                    <Button color="white_A700" size="4xl" className="sm:px-5 font-medium min-w-[185px] rounded-[31px] mr-[50px]">
                       Open Account
                     </Button>
                   </div>

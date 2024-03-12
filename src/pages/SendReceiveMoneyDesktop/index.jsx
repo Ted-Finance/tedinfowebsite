@@ -25,18 +25,14 @@ export default function SendReceiveMoneyDesktopPage() {
               />
             </div>
             <div className="flex flex-col items-center justify-start w-[33%] left-[10%] top-[5%] m-auto absolute">
-              <Heading size="3xl" as="h1" className="!font-bold">
-                <>
+              <Heading size="3xl" as="h1" className="!font-bold mr-[12.5rem]">
                   Smart Virtual <br />
                   US Dollar Card
-                </>
               </Heading>
-              <Text size="8xl" as="p" className="mt-[-65px] !text-black-900_02 !font-poppins">
-                <>
+              <Text size="8xl" as="p" className="mt-[] !text-black-900_02 !font-poppins">
                   You can now Shop online, Pay subscription <br />
                   and lots more with TedFinance Smart Virtual <br />
                   US Dollar Card{" "}
-                </>
               </Text>
             </div>
             <div className="flex flex-col items-start justify-start w-[48%] gap-11 left-0 top-[11%] m-auto absolute">
@@ -227,7 +223,7 @@ export default function SendReceiveMoneyDesktopPage() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-start w-[37%] gap-8 bottom-[3%] right-[16%] m-auto absolute">
-              <div className="flex flex-row justify-start items-start h-[518px] w-full md:h-auto pb-[30px] sm:pb-5 border-gray-900_04 border border-solid bg-gradient6 bg-[url(/public/images/img_cta_section.png)] bg-cover bg-no-repeat rounded-[20px]">
+              <div className="flex flex-row justify-start items-start h-[518px] w-full md:h-auto pb-[30px] sm:pb-5 border-gray-900_04 border border-solid bg-gradient6 bg-[url(/public/images/img_cta_section.png)] bg-cover bg-no-repeat rounded-[20px]  bg-black-900_02">
                 <div className="flex flex-col items-end justify-start w-[96%] mb-[111px] gap-6">
                   <div className="h-[290px] w-full relative">
                     <Img

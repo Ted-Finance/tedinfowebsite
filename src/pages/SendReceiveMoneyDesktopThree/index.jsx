@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { Text, Button, Img, Heading } from "../../components";
+import { Text, Button, Img, Heading, ProductDropDown } from "../../components";
 
 export default function SendReceiveMoneyDesktopThreePage() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Helmet>
@@ -13,80 +33,122 @@ export default function SendReceiveMoneyDesktopThreePage() {
         <div className="flex flex-col items-center justify-start w-full">
           <div className="h-[1617px] w-full md:px-5 relative max-w-[1710px]">
             <div className="flex flex-col items-start justify-start w-[92%] right-0 top-0 m-auto absolute">
-              <header className="flex md:flex-col w-[88%] ml-[3px] md:gap-5 md:ml-0 z-[1]">
-                <Img src="images/img_group_150x207.svg" alt="image" className="h-[164px]" />
-                <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full mt-[37px] md:gap-10 md:mt-0">
-                  <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10">
-                    <a
-                      href="#"
-                      className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                    >
-                      <Text as="p" className="!text-white-A700">
-                        Home
-                      </Text>
-                    </a>
-                    <a
-                      href="#"
-                      className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                    >
-                      <Text as="p" className="!text-white-A700">
-                        Products
-                      </Text>
-                    </a>
-                    <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
-                      Learn
-                    </Button>
-                    <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
-                      Company
-                    </Button>
+              <header className="flex md:flex-col w-[88%] ml-[3px] md:gap-5 md:ml-0">
+                <Img src="images/img_group_150x207.svg" alt="image" className="h-[164px] mt-10" />
+                <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full ml-[20rem] mt-[-40px] md:gap-10 md:mt-0">
+                  <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10 z-[1]">
+                    {!isOpen && (
+                      <>
+                        <a
+                          href="#"
+                          className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px] cursor-pointer"
+                        >
+                          <Text as="p" className="!text-white-A700">
+                            Home
+                          </Text>
+                        </a>
+                        <a
+                          className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px] cursor-pointer"
+                          onClick={toggleMenu}
+                        >
+                          <Text as="p" className="!text-white-A700">
+                            Products
+                          </Text>
+                        </a>
+                      </>)}
+                    {isOpen && (
+                      <div ref={dropdownRef} className="mt-[4rem]">
+                        <ProductDropDown toggleMenu={toggleMenu} />
+                      </div>
+                    )}
+                    {!isOpen && (
+                      <>
+                        <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px] cursor-pointer">
+                          Learn
+                        </Button>
+                        <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px] cursor-pointer">
+                          Company
+                        </Button>
+                      </>)}
                   </div>
-                  <ul className="flex flex-row justify-start items-center gap-[30px]">
-                    <li>
-                      <a href="#" className="cursor-pointer hover:bg-light_blue-300">
-                        <Text as="p" className="!text-gray-900_01">
-                          Sign Up
-                        </Text>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
-                      >
-                        <Text as="p" className="!text-gray-900_05 !font-medium">
-                          Login
-                        </Text>
-                      </a>
-                    </li>
-                  </ul>
+                  {!isOpen && (
+                    <>
+                      <ul className="flex flex-row justify-start items-center gap-[30px]">
+                        <li>
+                          <a href="#" className="cursor-pointer hover:bg-light_blue-300">
+                            <Text as="p" className="!text-gray-900_01">
+                              Sign Up
+                            </Text>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
+                          >
+                            <Text as="p" className="!text-gray-900_05 !font-medium">
+                              Login
+                            </Text>
+                          </a>
+                        </li>
+                      </ul>
+                    </>)}
                 </div>
               </header>
               <div className="flex flex-row md:flex-col justify-between items-start w-full mt-[-4px] md:gap-10">
-                <div className="flex flex-col items-start justify-start w-[38%] md:w-full mt-[79px] md:mt-0">
-                  <Heading size="3xl" as="h1" className="w-[96%] ml-px md:ml-0 !font-bold">
-                    <>
-                      Investment, Ultimate
-                      <br />
-                      way of Growing your <br />
-                      Wealth
-                    </>
-                  </Heading>
-                  <Text size="8xl" as="p" className="ml-px md:ml-0 !text-black-900_02 !font-poppins">
-                    <>
-                      Incredible Platforms you can invest your funds, <br />
-                      and automatically grow your wealth
-                    </>
-                  </Text>
-                  <Button
-                    size="5xl"
-                    rightIcon={
-                      <Img src="images/img_heroiconssolid_arrowuptray.svg" alt="heroicons-solid/arrow-up-tray" />
-                    }
-                    className="mt-11 gap-[30px] sm:px-5 font-poppins font-semibold min-w-[397px] rounded-[15px] sm:min-w-full"
-                  >
-                    Get Started Now
-                  </Button>
-                </div>
+                {!isOpen ? (
+                  <div className="flex flex-col items-start justify-start w-[38%] md:w-full mt-[79px] md:mt-0">
+                    <Heading size="3xl" as="h1" className="w-[96%] ml-px md:ml-0 !font-bold">
+                      <>
+                        Investment, Ultimate
+                        <br />
+                        way of Growing your <br />
+                        Wealth
+                      </>
+                    </Heading>
+                    <Text size="8xl" as="p" className="ml-px md:ml-0 !text-black-900_02 !font-poppins">
+                      <>
+                        Incredible Platforms you can invest your funds, <br />
+                        and automatically grow your wealth
+                      </>
+                    </Text>
+                    <Button
+                      size="5xl"
+                      rightIcon={
+                        <Img src="images/img_heroiconssolid_arrowuptray.svg" alt="heroicons-solid/arrow-up-tray" />
+                      }
+                      className="mt-11 gap-[30px] sm:px-5 font-poppins font-semibold min-w-[397px] rounded-[15px] sm:min-w-full"
+                    >
+                      Get Started Now
+                    </Button>
+                  </div>
+                ) : (
+                  <div className="flex flex-col items-start justify-start w-[38%] md:w-full mt-[-150px] md:mt-0">
+                    <Heading size="3xl" as="h1" className="w-[96%] ml-px md:ml-0 !font-bold">
+                      <>
+                        Investment, Ultimate
+                        <br />
+                        way of Growing your <br />
+                        Wealth
+                      </>
+                    </Heading>
+                    <Text size="8xl" as="p" className="ml-px md:ml-0 !text-black-900_02 !font-poppins">
+                      <>
+                        Incredible Platforms you can invest your funds, <br />
+                        and automatically grow your wealth
+                      </>
+                    </Text>
+                    <Button
+                      size="5xl"
+                      rightIcon={
+                        <Img src="images/img_heroiconssolid_arrowuptray.svg" alt="heroicons-solid/arrow-up-tray" />
+                      }
+                      className="mt-11 gap-[30px] sm:px-5 font-poppins font-semibold min-w-[397px] rounded-[15px] sm:min-w-full"
+                    >
+                      Get Started Now
+                    </Button>
+                  </div>
+                )}
                 <Img
                   src="images/img_abstract_design_purple_400.png"
                   alt="abstractdesign"
@@ -96,62 +158,67 @@ export default function SendReceiveMoneyDesktopThreePage() {
             </div>
             <div className="flex flex-col items-center justify-center w-full h-full left-0 bottom-0 right-0 top-0 m-auto absolute">
               <div className="flex flex-row md:flex-col justify-center items-start w-full md:gap-5">
-                <div className="flex flex-row md:flex-col justify-start w-[47%] md:w-full mt-[703px] gap-5 md:mt-0 z-[1]">
+                <div className="flex flex-row md:flex-col justify-start w-[47%] md:w-full mt-[703px] gap-5 md:mt-0 animate-horizontal">
                   <Img
                     src="images/img_3d_rendering_ba_9.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_10.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[40%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_11.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_12.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_13.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_14.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_15.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_16.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_17.png"
                     alt="3drenderingba"
-                    className="w-[9%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                   <Img
                     src="images/img_3d_rendering_ba_60x27.png"
                     alt="3drenderingba"
-                    className="w-[4%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
+                  />
+                  <Img
+                    src="images/img_3d_rendering_ba_9.png"
+                    alt="3drenderingba"
+                    className="w-[43%] md:w-full md:h-[60px] object-cover rounded-[10px]"
                   />
                 </div>
                 <Img
                   src="images/img_mockup.png"
                   alt="mockup_one"
-                  className="w-[98%] md:w-full md:h-[1581px] ml-[-751px] md:ml-0 object-cover"
+                  className="w-[98%] md:w-full md:h-[1581px]  md:ml-0 object-cover ml-[10rem] cursor-pointer"
                 />
               </div>
               <Text size="7xl" as="p" className="w-[82%] mt-[-36px] !text-gray-900_01 !font-poppins text-center">
@@ -159,10 +226,10 @@ export default function SendReceiveMoneyDesktopThreePage() {
                 purchasing shares of publicly traded companies, you gain the opportunity to profit from their growth.
               </Text>
             </div>
-            <div className="flex flex-col items-start justify-start w-[69%] gap-9 bottom-[5%] left-[9%] m-auto absolute">
+            <div className="flex flex-col items-start justify-start gap-9 bottom-[5%] left-[9%] m-auto absolute">
               <div className="flex flex-col items-center justify-start w-[51%] md:w-full">
                 <div className="flex flex-col items-start justify-start w-full gap-[22px]">
-                  <Heading as="h2" className="ml-[25px] md:ml-0 sm:ml-5">
+                  <Heading as="h2" className="md:ml-0 sm:ml-5 ml-[0.5rem]">
                     Investment in Stock
                   </Heading>
                   <div className="h-[561px] w-full relative">
@@ -195,7 +262,7 @@ export default function SendReceiveMoneyDesktopThreePage() {
                 <>
                   Why Invest in Stocks?
                   <br />
-                  Potential for High Returns: 
+                  Potential for High Returns:
                 </>
               </span>
               <span className="text-gray-900_01">
@@ -208,7 +275,7 @@ export default function SendReceiveMoneyDesktopThreePage() {
               <span className="text-gray-900_01 font-semibold">Share in Company Success:</span>
               <span className="text-gray-900_01">
                 <>
-                   As a shareholder, you benefit when a company does well. Your share price can increase, and you may
+                  As a shareholder, you benefit when a company does well. Your share price can increase, and you may
                   receive dividend payments from a portion of the company&#39;s profits.
                   <br />
                   <br />
@@ -240,7 +307,7 @@ export default function SendReceiveMoneyDesktopThreePage() {
                 <>
                   Before You Dive In:
                   <br />
-                  Understand the Risks: 
+                  Understand the Risks:
                 </>
               </span>
               <span className="text-gray-900_01">
@@ -252,7 +319,7 @@ export default function SendReceiveMoneyDesktopThreePage() {
               <span className="text-gray-900_01 font-semibold">Invest for the Long Term:</span>
               <span className="text-gray-900_01">
                 <>
-                   Don&#39;t expect to get rich quick. Stocks are well-suited for long-term investment horizons.
+                  Don&#39;t expect to get rich quick. Stocks are well-suited for long-term investment horizons.
                   <br />
                 </>
               </span>

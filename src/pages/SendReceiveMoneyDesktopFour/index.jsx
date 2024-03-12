@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { Text, Button, Img, Heading } from "../../components";
+import { Text, Button, Img, Heading, ProductDropDown } from "../../components";
 
 export default function SendReceiveMoneyDesktopFourPage() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Helmet>
@@ -22,36 +42,50 @@ export default function SendReceiveMoneyDesktopFourPage() {
                 <Img
                   src="images/img_mockup_1.png"
                   alt="mockup_one"
-                  className="justify-center h-[1581px] w-full sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
+                  className="justify-center h-[1581px] w-full sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute ml-[10rem]"
                 />
+                <Img src="images/img_group_150x207.svg" alt="image" className="h-[150px] ml-[6rem] mt-10"/>
                 <div className="flex flex-col items-start justify-start w-[83%] h-full left-[6%] bottom-0 top-0 m-auto absolute">
+                  
                   <header className="flex flex-row md:flex-col justify-between items-center w-full ml-1 md:gap-10 md:ml-0">
-                    <Img src="images/img_group_150x207.svg" alt="image" className="h-[150px]" />
-                    <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full mt-[39px] md:gap-10 md:mt-0">
-                      <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10">
+                    <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full ml-[38rem] mt-[39px] md:gap-10 md:mt-0">
+                      <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10 z-[1]">
+                      {!isOpen && (
+                        <>
                         <a
                           href="#"
-                          className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                          className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
                         >
                           <Text as="p" className="!text-white-A700">
                             Home
                           </Text>
                         </a>
                         <a
-                          href="#"
-                          className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
+                          className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+                          onClick={toggleMenu}
                         >
                           <Text as="p" className="!text-white-A700">
                             Products
                           </Text>
-                        </a>
-                        <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
-                          Learn
-                        </Button>
-                        <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
-                          Company
-                        </Button>
+                        </a> 
+                        </>)}
+                        {isOpen && (
+                          <div ref={dropdownRef}>
+                            <ProductDropDown toggleMenu={toggleMenu}/>
+                          </div>
+                        )}
+                        {!isOpen && (
+                          <>
+                          <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
+                            Learn
+                          </Button>
+                          <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
+                            Company
+                          </Button>
+                        </>)}
                       </div>
+                      {!isOpen && (
+                        <>
                       <ul className="flex flex-row justify-start items-center gap-[30px]">
                         <li>
                           <a href="#" className="cursor-pointer hover:bg-light_blue-300">
@@ -71,9 +105,11 @@ export default function SendReceiveMoneyDesktopFourPage() {
                           </a>
                         </li>
                       </ul>
+                      </>)}
                     </div>
                   </header>
-                  <div className="flex flex-col items-start justify-start mt-[114px]">
+                  {!isOpen ? (
+                  <div className="flex flex-col items-start justify-start mt-[195px]">
                     <Heading size="3xl" as="h1" className="w-[92%] ml-[3px] md:ml-0">
                       <>
                         Send & Receive <br />
@@ -99,6 +135,34 @@ export default function SendReceiveMoneyDesktopFourPage() {
                       Get Started Now
                     </Button>
                   </div>
+                  ) : (
+                    <div className="flex flex-col items-start justify-start mt-[-164px]">
+                    <Heading size="3xl" as="h1" className="w-[92%] ml-[3px] md:ml-0">
+                      <>
+                        Send & Receive <br />
+                        Money From <br />
+                        Friends & Family
+                      </>
+                    </Heading>
+                    <Text size="10xl" as="p" className="mt-[25px] !text-black-900_02 !font-poppins">
+                      <>
+                        You can send and also receive Money <br />
+                        from Anyone & Anywhere in
+                        <br />
+                        the world{" "}
+                      </>
+                    </Text>
+                    <Button
+                      size="5xl"
+                      rightIcon={
+                        <Img src="images/img_heroiconssolid_arrowuptray.svg" alt="heroicons-solid/arrow-up-tray" />
+                      }
+                      className="mt-3.5 ml-0.5 gap-[30px] md:ml-0 sm:px-5 font-poppins font-semibold min-w-[397px] rounded-[15px] sm:min-w-full"
+                    >
+                      Get Started Now
+                    </Button>
+                  </div>
+                  )}
                   <div className="h-[593px] w-[44%] md:w-full mt-[79px] relative">
                     <Img
                       src="images/img_currency_exchan_593x591.png"
@@ -135,7 +199,7 @@ export default function SendReceiveMoneyDesktopFourPage() {
                 </Text>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-start w-[33%] bottom-0 right-[15%] m-auto absolute">
+            <div className="flex flex-col items-center justify-start w-[33%] bottom-0 right-[15%] m-auto absolute mr-[-5rem]">
               <Heading as="h4" className="w-[77%]">
                 <>
                   All Payments Highly <br />
