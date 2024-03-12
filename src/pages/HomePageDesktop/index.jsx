@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { Text, Button, Img, Heading, Input, ProductDropDown } from "../../components";
+import { Link } from "react-router-dom";
 
 export default function HomePageDesktopPage() {
 
@@ -33,14 +34,14 @@ export default function HomePageDesktopPage() {
       </Helmet>
       <div className="h-[8066px] w-full bg-gradient2 relative">
         <div className="flex flex-col items-center justify-start w-full top-0 right-0 left-0 m-auto absolute">
-          <Img src="images/img_group_1.png" alt="image" className="w-full md:h-auto sm:w-full z-[1] object-cover" />
+          <Img src="images/img_group_1.png" alt="image" className="w-full md:h-auto sm:w-full object-cover" />
           <Img
             src="images/img_rectangle_1.png"
             alt="image_one"
             className="w-full md:h-[6323px] mt-[-319px] object-cover"
           />
         </div>
-        <div className="flex flex-row md:flex-col justify-start items-start w-[40%] gap-7 left-[10%] top-[10%] m-auto md:gap-5 absolute">
+        <div className="flex flex-row md:flex-col justify-start items-start w-[40%] gap-7 left-[7%] top-[10%] m-auto md:gap-5 absolute">
           <Button
             color="white_A700"
             size="4xl"
@@ -105,74 +106,59 @@ export default function HomePageDesktopPage() {
                       <Img
                         src="images/img_group_150x207.svg"
                         alt="image_two"
-                        className="h-[150px] left-[24%] top-[14%] m-auto absolute"
+                        className="h-[150px] left-[19%] top-[14%] m-auto absolute"
                       />
                     </div>
-                    <header className="flex flex-row md:flex-col justify-between items-center w-[59%] md:w-full mt-[70px] ml-[-56px] md:gap-10 md:ml-0 md:mt-0 z-[1]">
-                      <div className="flex flex-row sm:flex-col justify-between w-[60%] md:w-full sm:gap-10">
-                      {!isOpen && (
-                        <>
-                        <a
-                          href="/"
-                          className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
-                        >
-                          <Text as="p" className="!text-white-A700">
-                            Home
-                          </Text>
-                        </a>
-                        <a
-                          className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
-                          onClick={toggleMenu}
-                        >
-                          <Text as="p" className="!text-white-A700">
-                            Products
-                          </Text>
-                        </a> 
-                        </>)}
-                        {isOpen && (
-                          <div ref={dropdownRef}>
-                            <ProductDropDown toggleMenu={toggleMenu}/>
-                          </div>
-                        )}
-                        {!isOpen && (
-                          <>
-                        <div className="flex flex-row justify-center p-[13px] bg-purple-400 rounded-[25px]">
-                          <Text as="p" className="!text-white-A700 cursor-pointer">
-                            Learn
-                          </Text>
-                        </div>
-                        <div className="flex flex-row justify-center p-[11px] bg-purple-400 rounded-[25px]">
-                          <Text as="p" className="mt-1 !text-white-A700 cursor-pointer">
-                            Company
-                          </Text>
-                        </div>
-                        </>)}
+                    <header className="flex flex-row md:flex-col justify-between items-center w-[59%] md:w-full mt-[70px] ml-[-56px] md:gap-10 md:ml-0 md:mt-0 z-[1] relative">
+                    <div className="flex flex-row sm:flex-col justify-between w-[60%] md:w-full sm:gap-10">
+                      <a
+                        href="/"
+                        className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+                      >
+                        <p className="!text-white-A700">Home</p>
+                      </a>
+                      <div
+                        className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+                        onClick={toggleMenu}
+                      >
+                        <p className="!text-white-A700">Products</p>
                       </div>
-                      {!isOpen && (
-                        <>
-                      <ul className="flex flex-row justify-start items-center gap-[30px]">
-                        <li>
-                          <a href="#" className="cursor-pointer hover:bg-light_blue-300">
-                            <Text as="p" className="!text-white-A700">
-                              Sign Up
-                            </Text>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-white-A700 hover:font-normal"
-                          >
-                            <Text as="p" className="!text-gray-900_05 !font-medium">
-                              Login
-                            </Text>
-                          </a>
-                        </li>
-                      </ul>
-                      </>)}
-                    </header>
+                      <div className="flex flex-row justify-center p-[13px] bg-purple-400 rounded-[25px]">
+                        <p className="!text-white-A700 cursor-pointer">Learn</p>
+                      </div>
+                      <Link to="/about">
+                      <div className="flex flex-row justify-center p-[11px] bg-purple-400 rounded-[25px]">
+                        <p className="mt-1 !text-white-A700 cursor-pointer">Company</p>
+                      </div>
+                      </Link>
+                    </div>
+                    <ul className="flex flex-row justify-start items-center gap-[30px]">
+                      <li>
+                        <a href="#" className="cursor-pointer hover:bg-light_blue-300">
+                          <p className="!text-white-A700">Sign Up</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-white-A700 hover:font-normal"
+                        >
+                          <p className="!text-gray-900_05 !font-medium">Login</p>
+                        </a>
+                      </li>
+                    </ul>
+                    {isOpen && (
+                      <div
+                        ref={dropdownRef}
+                        className="absolute top-full left-0 z-[2] bg-white-A700 rounded-lg shadow-lg"
+                        style={{ marginTop: '5px', width: '399px', height: '411px' }}
+                      >
+                        <ProductDropDown toggleMenu={toggleMenu} />
+                      </div>
+                    )}
+                  </header>
                   </div>
-                  <div className="flex flex-row justify-start w-[48%] md:w-full mt-[-200px] ml-[162px] md:ml-5">
+                  <div className="flex flex-row justify-start w-[48%] md:w-full mt-[-200px] ml-[122px] md:ml-5">
                     <div className="flex flex-col items-start justify-start w-full gap-5">
                       <Input
                         shape="round"
@@ -197,7 +183,7 @@ export default function HomePageDesktopPage() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-start w-[43%] md:w-full mt-[-340px] mr-[90px] md:mr-5 z-[1]">
+              <div className="flex flex-col items-center justify-start w-[43%] md:w-full mt-[-340px] mr-[70px] md:mr-5 z-[1]">
                 <div className="flex flex-row md:flex-col justify-center items-center w-full md:gap-5">
                   <div className="flex flex-col items-center justify-start w-[48%] md:w-full z-[1]">
                     <div className="h-[650px] w-full relative">
@@ -375,9 +361,9 @@ export default function HomePageDesktopPage() {
                       <div className="flex flex-row justify-center w-full">
                         <div className="h-[341px] w-full sm:w-full relative">
                           <Img
-                            src="images/cardpin.png"
+                            src="images/master-card.svg"
                             alt="pngwingfive_one"
-                            className="justify-center h-[341px] w-[70%] sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
+                            className="justify-center h-[341px] w-[100%] sm:w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
                           />
                          
                         </div>

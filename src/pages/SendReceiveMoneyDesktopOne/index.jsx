@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { Text, Button, Img, Heading, ProductDropDown } from "../../components";
+import { Link } from "react-router-dom"
 
 export default function SendReceiveMoneyDesktopOnePage() {
 
@@ -139,69 +140,56 @@ export default function SendReceiveMoneyDesktopOnePage() {
                 className="w-[98%] md:w-full md:h-[586px] mt-[-3px] object-cover rounded-[20px]"
               />
             </div>
-            <Img src="images/img_group_150x207.svg" alt="image" className="h-[164px] ml-[9rem] mt-10" />
-            <header className="flex flex-row md:flex-col justify-between items-center w-[80%] top-0 right-0 left-0 m-auto md:gap-10 absolute">
-
-              <div className="flex flex-row md:flex-col justify-between items-center w-[66%] md:w-full ml-[35rem] mt-[37px] md:gap-10 md:mt-0">
-                <div className="flex flex-row sm:flex-col justify-between w-auto gap-[27px] sm:gap-10 z-[1]">
-                  {!isOpen && (
-                    <>
-                      <a
-                        href="/"
-                        className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                      >
-                        <Text as="p" className="!text-white-A700">
-                          Home
-                        </Text>
-                      </a>
-                      <a
-                        href="#"
-                        className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
-                        onClick={toggleMenu}
-                      >
-                        <Text as="p" className="!text-white-A700">
-                          Products
-                        </Text>
-                      </a>
-                    </>)}
-                  {isOpen && (
-                    <div ref={dropdownRef}>
-                      <ProductDropDown toggleMenu={toggleMenu} />
-                    </div>
-                  )}
-                  {!isOpen && (
-                    <>
-                      <Button size="md" shape="round" className="sm:px-5 min-w-[99px] !rounded-[25px]">
-                        Learn
-                      </Button>
-                      <Button size="md" shape="round" className="sm:px-5 min-w-[132px] !rounded-[25px]">
-                        Company
-                      </Button>
-                    </>)}
+            <Img src="images/Logo-one-white.svg" alt="image" className="h-[164px] ml-[9rem] mt-10" />
+            <header className="flex flex-row md:flex-col justify-between items-center w-[59%] md:w-full mt-[-160px] ml-[38rem] md:gap-10 md:ml-0 md:mt-0 z-[1] relative">
+              <div className="flex flex-row sm:flex-col justify-between w-[60%] md:w-full sm:gap-10">
+                <a
+                  href="/"
+                  className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+                >
+                  <p className="!text-white-A700">Home</p>
+                </a>
+                <div
+                  className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 cursor-pointer bg-purple-400 rounded-[25px]"
+                  onClick={toggleMenu}
+                >
+                  <p className="!text-white-A700">Products</p>
                 </div>
-                {!isOpen && (
-                  <>
-                    <ul className="flex flex-row justify-start items-center gap-[30px]">
-                      <li>
-                        <a href="#" className="cursor-pointer hover:bg-light_blue-300">
-                          <Text as="p" className="!text-gray-900_01">
-                            Sign Up
-                          </Text>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-gray-900_01 hover:font-normal"
-                        >
-                          <Text as="p" className="!text-gray-900_05 !font-medium">
-                            Login
-                          </Text>
-                        </a>
-                      </li>
-                    </ul>
-                  </>)}
+                <div className="flex flex-row justify-center p-[13px] bg-purple-400 rounded-[25px]">
+                  <p className="!text-white-A700 cursor-pointer">Learn</p>
+                </div>
+                <div className="flex flex-row justify-center p-[11px] bg-purple-400 rounded-[25px]">
+                <Link to="/about">
+                  <p className="mt-1 !text-white-A700 cursor-pointer">Company</p>
+                </Link>
+                </div>
               </div>
+              <ul className="flex flex-row justify-start items-center gap-[30px]">
+                <li>
+                  <a href="#" className="cursor-pointer hover:bg-light_blue-300">
+                    <Text as="p" className="!text-gray-900_01">
+                      Sign Up
+                    </Text>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-white-A700 hover:font-normal"
+                  >
+                    <p className="!text-gray-900_05 !font-medium">Login</p>
+                  </a>
+                </li>
+              </ul>
+              {isOpen && (
+                <div
+                  ref={dropdownRef}
+                  className="absolute top-full left-0 z-[2] bg-white-A700 rounded-lg shadow-lg"
+                  style={{ marginTop: '5px', width: '399px', height: '411px' }}
+                >
+                  <ProductDropDown toggleMenu={toggleMenu} />
+                </div>
+              )}
             </header>
           </div>
           <div className="flex flex-row md:flex-col justify-between w-full mt-[29px] md:gap-10 md:px-5 max-w-[1333px]">
