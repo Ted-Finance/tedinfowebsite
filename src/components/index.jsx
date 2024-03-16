@@ -4,4 +4,5 @@ import { Button } from "./Button";
 import { Img } from "./Img";
 import { Input } from "./Input";
 import { ProductDropDown } from "./ProductDropDown";
-export { Text, Heading, Button, Img, Input, ProductDropDown };
+import { HambugerMenu } from "./HambugerMenu"
+export { Text, Heading, Button, Img, Input, ProductDropDown, HambugerMenu };
