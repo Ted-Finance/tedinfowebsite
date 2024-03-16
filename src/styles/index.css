@@ -61,7 +61,6 @@ input:focus {
 }
 
 .animate-horizontal {
-  display: flex;
   animation: moveHorizontal 10s linear infinite; /* Adjust duration and timing function as needed */
 }
 
