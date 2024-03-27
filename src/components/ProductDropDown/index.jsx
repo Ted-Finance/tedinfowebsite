@@ -1,10 +1,13 @@
 import React from 'react'
 import productList from './productList.json'
+import ClickAwayListener from 'react-click-away-listener';
 import { Img } from "../Img";
 import { Link } from 'react-router-dom';
   
 const ProductDropDown = ({toggleMenu}) => {
     return (
+      <>
+      <ClickAwayListener onClickAway={toggleMenu}>
       <div className='relative flex flex-col items-center w-[399px] h-[411px] rounded-[30px] bg-white-A700'>
         <div className='absolute flex flex-col items-start rounded-lg p-2 w-full'>
         <div className='m-2 flex w-full rounded-lg items-start justify-between' onClick={toggleMenu}>
@@ -32,6 +35,8 @@ const ProductDropDown = ({toggleMenu}) => {
           })}
         </div>
       </div>
+      </ClickAwayListener>
+      </>
     );
 };
   
