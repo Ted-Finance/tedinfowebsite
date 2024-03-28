@@ -22,12 +22,8 @@ const ProjectRoutes = () => {
       element: <HomePage />,
     },
     {
-      path: "about1",
-      element: <AboutPage />,
-    },
-    {
       path: "about",
-      element: <SendReceiveMoneyDesktopTwo />,
+      element: <AboutPage />,
     },
     {
       path: "sendreceivemoneydesktop",
