@@ -1,12 +1,16 @@
 import React, { useState, useRef } from "react";
 import { Button, Img, ProductDropDown, HambugerMenu } from "./..";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header({ ...props }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenHam, setIsOpenHam] = useState(false);
   const dropdownRef = useRef(null);
   const mambugerRef = useRef(null);
+  const location = useLocation();
+
+  const isHomeRoute = location.pathname === '/' || location.pathname === '/home';
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -57,7 +61,7 @@ export default function Header({ ...props }) {
                 <ul className="flex flex-row justify-start items-center gap-[0.5rem]">
                   <li>
                     <a href="#" className="cursor-pointer hover:bg-light_blue-300 flex justify-center items-center  w-[110px] hover:h-[55px] hover:rounded-[27px] font-normal">
-                      <p className="!text-white-A700 !font-normal text-[18px]">Sign Up</p>
+                      <p className={`!font-normal !text-${isHomeRoute ? 'white-A700' : '#420442'} text-[18px]`}>Sign Up</p>
                     </a>
                   </li>
                   <li>

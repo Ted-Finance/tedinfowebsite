@@ -11,6 +11,7 @@ import SendReceiveMoneyDesktopFour from "pages/SendReceiveMoneyDesktopFour";
 import ExchangeDesktop from "pages/ExchangeDesktop";
 import MacBookPro16One from "pages/MacBookPro16One";
 import HomePage from "pages/HomePage";
+import AboutPage from "pages/AboutPage";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -19,6 +20,10 @@ const ProjectRoutes = () => {
     {
       path: "home",
       element: <HomePage />,
+    },
+    {
+      path: "about1",
+      element: <AboutPage />,
     },
     {
       path: "about",

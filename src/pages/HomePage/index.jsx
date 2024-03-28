@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { Text, Img, Input, Heading, Button } from "../../components";
 import Header from "../../components/Header";
 import TopFooter from "../../components/TopFooter";
+import Footer from "../../components/Footer"
 
 
 
@@ -868,10 +869,10 @@ export default function HomePage() {
             <div>
               <div
                 ref={lockRef}
-                className="bg-no-repeat bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat bg-contain md:bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
-                <div className="flex flex-col items-center justify-center w-full gap-[19px] ml-[2rem]">
-                  <Text size="12xl" as="p" className="!text-[#420442] mt-[15rem] 2xl:mt-[33rem] lg:mt-[32rem] 2xl:w-[9%] xl:w-[11%] lg:w-[13%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
+                <div className="flex flex-col items-center justify-center w-full gap-[19px] md:ml-[2rem]">
+                  <Text size="12xl" as="p" className="!text-[#420442] md:mt-[15rem] mt-[13rem] 2xl:mt-[33rem] lg:mt-[32rem] 2xl:w-[9%] xl:w-[11%] lg:w-[13%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
                     SECURITY
                   </Text>
                   <div className="bg-[#420442] lg:w-[80px] lg:h-[3px] w-[70px] h-[1px]" />
@@ -1122,6 +1123,8 @@ export default function HomePage() {
           <TopFooter />
           
         </div>
+        
+        <Footer />
       </div>
     </>
   )
