@@ -28,7 +28,7 @@ const ProjectRoutes = () => {
     },
 
     {
-      path: "sendreceivemoney1",
+      path: "sendreceivemoney",
       element: <SendReceiveMoney />,
     },
 
@@ -44,10 +44,6 @@ const ProjectRoutes = () => {
     {
       path: "virtualcard",
       element: <SendReceiveMoneyDesktopOne />,
-    },
-    {
-      path: "sendreceivemoney",
-      element: <SendReceiveMoneyDesktopFour />,
     },
     {
       path: "exchange",
