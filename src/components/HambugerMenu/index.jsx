@@ -41,6 +41,8 @@ const Accordion = ({ main, items, toggleMenu }) => {
               <Img src='images/arrow-up-tray.svg' alt='icon' className="mr-[1.5rem]" />
             </div>
           </button>
+        ) : main === "Products" ? (
+            <p className="ml-1 cursor-pointer mt-1" onClick={toggleAccordion}>{main}</p>
         ) : (
           <p className="ml-1 cursor-pointer mt-1">{main}</p>
         )}

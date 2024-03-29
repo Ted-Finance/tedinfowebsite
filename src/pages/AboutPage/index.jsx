@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { Text, Img, Input, Heading, Button } from "../../components";
+import { Text, Img, Heading, Button } from "../../components";
 import Header from "../../components/Header";
 import TopFooter from "../../components/TopFooter";
 import Footer from "../../components/Footer"
