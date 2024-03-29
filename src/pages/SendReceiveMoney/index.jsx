@@ -160,7 +160,7 @@ export default function SendReceiveMoney() {
 
                                 <div
                                     ref={mobileToRef}
-                                    className="mt-8 bg-cover lg:bg-contain 2xl:bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[591.52px] 2xl:h-[593px]"
+                                    className="mt-8 mx-auto lg:mx-0 bg-cover lg:bg-contain 2xl:bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[591.52px] 2xl:h-[593px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="12xl" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -187,7 +187,7 @@ export default function SendReceiveMoney() {
 
                                 <div
                                     ref={sitRef}
-                                    className="md:mt-8 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
+                                    className="md:mt-8 mx-auto lg:mx-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="12xl" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -218,7 +218,7 @@ export default function SendReceiveMoney() {
 
                                 <div
                                     ref={friendsRef}
-                                    className="mt-[-2rem] md:mt-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
+                                    className="mt-[-2rem] mx-auto lg:mx-0 md:mt-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="12xl" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -249,7 +249,7 @@ export default function SendReceiveMoney() {
 
                                 <div
                                     ref={happyRef}
-                                    className="mt-[-2rem] md:mt-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
+                                    className="mt-[-2rem] mx-auto lg:mx-0 md:mt-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -286,7 +286,7 @@ export default function SendReceiveMoney() {
                                 />
                                 <div
                                     ref={jumpRef}
-                                    className="xl:mt-[8rem] lg:mt-[4rem] mt-[-3rem] md:mt-0  bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[300px] lg:w-[480px] xl:w-[600px] 2xl:h-[532px] 2xl:w-[780px]"
+                                    className="xl:mt-[8rem] mx-auto lg:mx-0 lg:mt-[4rem] mt-[-3rem] md:mt-0  bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[300px] lg:w-[480px] xl:w-[600px] 2xl:h-[532px] 2xl:w-[780px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[1rem] md:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -317,7 +317,7 @@ export default function SendReceiveMoney() {
 
                                 <div
                                     ref={zeroRef}
-                                    className="mt-[-3rem] md:mt-0 xl:mt-[8rem] lg:mt-[4rem] bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[250px] md:h-[360px] lg:w-[480px] xl:w-[600px] 2xl:h-[532px] 2xl:w-[780px]"
+                                    className="mt-[-3rem] mx-auto lg:mx-0 md:mt-0 xl:mt-[8rem] lg:mt-[4rem] bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[250px] md:h-[360px] lg:w-[480px] xl:w-[600px] 2xl:h-[532px] 2xl:w-[780px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[1rem] md:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">

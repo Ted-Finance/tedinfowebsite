@@ -303,7 +303,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="">
 
               <Img src="images/main.svg" alt="iphone mock up" className="lg:w-[1018px] w-[300px] ml-[2rem] md:ml-[13rem] lg:ml-0 mt-5 lg:mt-0" />
             </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={worldRef}
-                className="bg-no-repeat bg-cover lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] h-[393px] 2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] h-[393px] 2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[50%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
@@ -375,7 +375,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={phonesRef}
-                className="bg-no-repeat bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[393px]  2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[393px]  2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#DE1FD6] mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[17px]  font-bold text-center text-align-center lg:text-left">
@@ -426,7 +426,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={progressRef}
-                className="bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-4  lg:mt-[3rem] block lg:hidden lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -442,7 +442,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={cashRef}
-                className="bg-no-repeat md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat mx-auto lg:mx-0 md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -507,7 +507,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={colorCardRef}
-                className="bg-no-repeat bg-cover mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[500px] 2xl:w-[803px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat bg-cover mx-auto lg:mx-0 mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[500px] 2xl:w-[803px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#FFFFFF] hidden lg:block mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -560,7 +560,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={investRef}
-                className="bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#DE1FD6] mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -583,7 +583,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={satRef}
-                className="bg-no-repeat bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#FFFFFF] lg:!text-[#DE1FD6] mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -644,7 +644,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={manRef}
-                className="bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
 
@@ -668,7 +668,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={qbRef}
-                className="bg-no-repeat bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#FFFFFF] lg:block hidden mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -740,7 +740,7 @@ export default function HomePage() {
             <div>
               <div>
                 <div className="flex items-start justify-start w-full gap-[19px] lg:ml-[2rem]">
-                  <div className="2xl:pb-[50px] 2xl:pl-[50px] pb-5 pl-5 bg-[#F6B0A4] relative rounded-[20px] mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[360px]  h-[450px] lg:h-[490px] lg:w-[650px]">
+                  <div className="2xl:pb-[50px] 2xl:pl-[50px] pb-5 pl-5 bg-[#F6B0A4] mx-auto lg:mx-0 relative rounded-[20px] mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[360px]  h-[450px] lg:h-[490px] lg:w-[650px]">
                     <Img
                       src="images/img_abstract_design_224x213.png"
                       alt="abstractdesign"
@@ -845,7 +845,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={keyRef}
-                className="bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
 
@@ -869,7 +869,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={lockRef}
-                className="bg-no-repeat bg-contain md:bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat mx-auto lg:mx-0 bg-contain md:bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-center justify-center w-full gap-[19px] md:ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#420442] md:mt-[15rem] mt-[13rem] 2xl:mt-[33rem] lg:mt-[32rem] 2xl:w-[9%] xl:w-[11%] lg:w-[13%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">

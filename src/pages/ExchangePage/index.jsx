@@ -90,7 +90,7 @@ export default function ExchangePage() {
 
                                 <div
                                     ref={mobileToRef}
-                                    className="mt-8 2xl:mt-[-2rem] xl:ml-[-1rem] bg-contain md:bg-cover lg:bg-contain  bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[591.52px] 2xl:h-[593px]"
+                                    className="mt-8 mx-auto lg:mx-0 2xl:mt-[-2rem] xl:ml-[-1rem] bg-contain md:bg-cover lg:bg-contain  bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[591.52px] 2xl:h-[593px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem] md:ml-[4rem] lg:ml-[2rem] xl:ml-[4rem]   2xl:mt-[4rem]">
                                         <Text size="12xl" as="p" className="!text-[#DE1FD6] mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -117,7 +117,7 @@ export default function ExchangePage() {
 
                                 <div
                                     ref={sitRef}
-                                    className="md:mt-8 2xl:bg-contain bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
+                                    className="md:mt-8 mx-auto lg:mx-0 2xl:bg-contain bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="12xl" as="p" className="hidden lg:block !text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">

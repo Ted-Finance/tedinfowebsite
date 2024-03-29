@@ -13,7 +13,8 @@ import MacBookPro16One from "pages/MacBookPro16One";
 import HomePage from "pages/HomePage";
 import AboutPage from "pages/AboutPage";
 import SendReceiveMoney from "pages/SendReceiveMoney";
-import ExchangePage from "pages/ExchangePage"
+import ExchangePage from "pages/ExchangePage";
+import VirtualcardPage from "pages/VirtualcardPage"
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -39,16 +40,17 @@ const ProjectRoutes = () => {
     },
 
     {
+      path: "virtualcard",
+      element: <VirtualcardPage />,
+    },
+
+    {
       path: "sendreceivemoneydesktop",
       element: <SendReceiveMoneyDesktop />,
     },
     {
       path: "investment",
       element: <SendReceiveMoneyDesktopThree />,
-    },
-    {
-      path: "virtualcard",
-      element: <SendReceiveMoneyDesktopOne />,
     },
     // {
     //   path: "macbookpro16one",

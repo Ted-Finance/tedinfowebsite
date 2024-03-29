@@ -568,7 +568,7 @@ export default function AboutPage() {
                         <div>
                             <div
                                 ref={mushRef}
-                                className="bg-contain lg:bg-contain md:bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] 2xl:h-[550px] lg:h-[450px] h-[300px] lg:w-[450px] xl:w-[550px] 2xl:w-[690px]"
+                                className="mx-auto lg:mx-0 bg-contain lg:bg-contain md:bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] 2xl:h-[550px] lg:h-[450px] h-[300px] lg:w-[450px] xl:w-[550px] 2xl:w-[690px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[90%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
@@ -595,7 +595,7 @@ export default function AboutPage() {
                         <div >
                             <div
                                 ref={blackRef}
-                                className="bg-no-repeat lg:bg-contain md:bg-cover bg-contain md:w-[710px] w-[360px] h-[300px] 2xl:h-[550px] lg:h-[450px] 2xl:w-[690px]  xl:w-[550px] lg:w-[450px]"
+                                className="bg-no-repeat mx-auto lg:mx-0 lg:bg-contain md:bg-cover bg-contain md:w-[710px] w-[360px] h-[300px] 2xl:h-[550px] lg:h-[450px] 2xl:w-[690px]  xl:w-[550px] lg:w-[450px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[90%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
