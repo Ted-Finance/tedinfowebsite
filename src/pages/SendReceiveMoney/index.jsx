@@ -277,7 +277,7 @@ export default function SendReceiveMoney() {
                             <div className="lg:w-[50%] w-full">
 
                                 <Img src="images/send-money-img.svg" alt="send money"
-                                    className="object-cover z-[1] 2xl:w-[45%] xl:w-[50%] lg:w-[43%] lg:ml-[8rem] xl:ml-[5rem] 2xl:ml-[8rem] hidden lg:block"
+                                    className="object-cover z-[1] 2xl:w-[70%] xl:w-[80%] lg:w-[83%] xl:ml-[0rem] hidden lg:block"
                                 />
                                 <Img
                                     src="images/img_abstract_design.svg"
