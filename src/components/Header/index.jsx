@@ -48,9 +48,11 @@ export default function Header({ ...props }) {
                 >
                   <p className="!text-white-A700 !font-normal text-[15px]">Products</p>
                 </div>
-                <div className="flex flex-row justify-center w-[100px] h-[51px] px-6 py-3.5 bg-purple-400 rounded-[25px]">
-                  <p className="!text-white-A700 cursor-pointer !font-normal text-[15px]">Learn</p>
-                </div>
+                <Link to="/useted">
+                  <div className="flex flex-row justify-center w-[100px] h-[51px] px-6 py-3.5 bg-purple-400 rounded-[25px]">
+                    <p className="!text-white-A700 cursor-pointer !font-normal text-[15px]">Learn</p>
+                  </div>
+                </Link>
                 <Link to="/about">
                   <div className="flex flex-row justify-center w-[100px] h-[51px] px-6 py-3 bg-purple-400 rounded-[25px]">
                     <p className="mt-1 !text-white-A700 cursor-pointer !font-normal text-[15px]">Company</p>

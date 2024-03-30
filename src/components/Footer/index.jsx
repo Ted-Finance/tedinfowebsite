@@ -36,7 +36,7 @@ export default function Footer({ ...props }) {
                   <a href="#">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">Support</Text>
                   </a>
-                  <a href="#">
+                  <a href="/useted">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">How to use Wallet</Text>
                   </a>
                 </li>

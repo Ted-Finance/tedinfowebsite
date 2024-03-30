@@ -17,6 +17,7 @@ import ExchangePage from "pages/ExchangePage";
 import VirtualcardPage from "pages/VirtualcardPage"
 import InvestmentPage from "pages/InvestmentPage"
 import MultiCurrencyPage from "pages/MultiCurrencyPage"
+import UseTedPage from "pages/UseTedPage"
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -54,6 +55,11 @@ const ProjectRoutes = () => {
     {
       path: "investment",
       element: <InvestmentPage />,
+    },
+
+    {
+      path: "useted",
+      element: <UseTedPage />,
     },
 
     {
