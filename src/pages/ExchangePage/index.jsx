@@ -33,7 +33,7 @@ export default function ExchangePage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/3d-box.svg')`;
+                    lazyImage.style.backgroundImage = `url('images/exchange-3d.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });
@@ -90,10 +90,10 @@ export default function ExchangePage() {
 
                                 <div
                                     ref={mobileToRef}
-                                    className="mt-8 mx-auto lg:mx-0 2xl:mt-[-2rem] xl:ml-[-1rem] bg-contain md:bg-cover lg:bg-contain  bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[591.52px] 2xl:h-[593px]"
+                                    className="mt-8 mx-auto lg:mx-0 2xl:mt-[-2rem] xl:ml-[-1rem] bg-contain md:bg-cover lg:bg-contain  bg-no-repeat lg:mb-0 md:mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[591.52px] 2xl:h-[593px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem] md:ml-[4rem] lg:ml-[2rem] xl:ml-[4rem]   2xl:mt-[4rem]">
-                                        <Text size="12xl" as="p" className="!text-[#DE1FD6] mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="!text-[#DE1FD6] mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             CURRENCY EXCHANGE
                                         </Text>
                                         <div className="bg-[#DE1FD6] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -117,10 +117,10 @@ export default function ExchangePage() {
 
                                 <div
                                     ref={sitRef}
-                                    className="md:mt-8 mx-auto lg:mx-0 2xl:bg-contain bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[593px] 2xl:w-[600px]"
+                                    className="md:mt-8 mx-auto lg:mx-0 2xl:bg-contain bg-cover lg:bg-contain bg-no-repeat lg:mb-0 md:mb-6 md:w-[670px] w-[350px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:h-[550px] 2xl:w-[550px] rounded-[18px] border border-solid border-black-900 shadow-lg"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
-                                        <Text size="12xl" as="p" className="hidden lg:block !text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="hidden lg:block !text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             CURRENCY EXCHANGE
                                         </Text>
                                         <div className="lg:hidden block mt-8">
@@ -149,7 +149,7 @@ export default function ExchangePage() {
                                                 Exchange Now
                                             </Button>
                                         </div>
-                                        <Text size="12xl" as="p" className="lg:hidden block !text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="lg:hidden block !text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             CURRENCY EXCHANGE
                                         </Text>
                                         <div className="bg-[#FFFFFF] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px] lg:hidden block" />

@@ -18,7 +18,7 @@ export default function VirtualcardPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/v-card1.svg')`;
+                    lazyImage.style.backgroundImage = `url('images/home-color-card.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });
@@ -52,7 +52,7 @@ export default function VirtualcardPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/v-card3.svg')`;
+                    lazyImage.style.backgroundImage = `url('images/v-card-paper.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });
@@ -303,10 +303,10 @@ export default function VirtualcardPage() {
 
                                 <div
                                     ref={mobileToRef}
-                                    className="mx-auto lg:mx-0 mt-8 md:bg-cover bg-contain lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px]"
+                                    className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 md:bg-cover bg-contain lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[350px] h-[280px] lg:h-[290px] 2xl:h-[390px]  xl:h-[360px] md:h-[360px] lg:w-[380px] xl:w-[480px] 2xl:w-[520px] lg:ml-[0.5rem] xl:ml-[0.7rem] 2xl:ml-[1rem]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
-                                        <Text size="12xl" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Shop Online with Ease
                                         </Text>
                                         <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
@@ -324,7 +324,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="12xl" as="p" className="2xl:mt-[11rem] xl:mt-[10rem] !text-[#FFFFFF] md:mt-[3rem] mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[7rem] xl:mt-[5rem] !text-[#FFFFFF] lg:mt-[1rem] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#FFFFFF] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -333,10 +333,10 @@ export default function VirtualcardPage() {
 
                                 <div
                                     ref={sitRef}
-                                    className="lg:mt-[-0.5rem] mx-auto lg:mx-0 2xl:mt-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px] 2xl:h-[550px]"
+                                    className="2xl:mt-[1rem] xl:mt-[1.6rem] lg:mt-[1.5rem] mx-auto lg:mx-0  bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px] 2xl:h-[550px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
-                                        <Text size="12xl" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Top Up on the Go
                                         </Text>
                                         <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[80%] text-align-center text-[12px] font-normal text-left">
@@ -354,7 +354,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="12xl" as="p" className="2xl:mt-[12rem] xl:mt-[11rem] !text-[#DE1FD6] mt-[5rem] md:mt-[3rem] lg:mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[12rem] xl:mt-[11rem] !text-[#DE1FD6] mt-[5rem] md:mt-[3rem] lg:mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#DE1FD6] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -363,10 +363,10 @@ export default function VirtualcardPage() {
 
                                 <div
                                     ref={friendsRef}
-                                    className="mx-auto lg:mx-0 lg:mt-[1rem] 2xl:mt-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px] 2xl:h-[550px]"
+                                    className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 lg:mt-[1rem] 2xl:mt-0 bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[690px] w-[340px] lg:h-[285px]  xl:h-[360px] h-[260px] lg:w-[380px] xl:w-[480px] 2xl:w-[520px] 2xl:h-[390px] lg:ml-[0.5rem] xl:ml-[0.7rem] 2xl:ml-[1rem]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
-                                        <Text size="12xl" as="p" className="!text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="!text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Subscription Savior
                                         </Text>
                                         <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[80%] text-align-center text-[12px] font-normal text-left">
@@ -374,7 +374,7 @@ export default function VirtualcardPage() {
                                                 Pay for your favorite streaming services, subscriptions, and online memberships without worrying about currency conversion fees.
                                             </>
                                         </Text>
-                                        <div className="mt-8 lg:mt-0 block lg:hidden">
+                                        <div className="mt-0 lg:mt-0 block lg:hidden">
                                             <Button
                                                 color="white_A700"
                                                 size="4xl"
@@ -384,7 +384,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="12xl" as="p" className="2xl:mt-[16.5rem] xl:mt-[15.5rem] lg:mt-[8rem] !text-[#FFFFFF] mt-[3.5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[9rem] xl:mt-[8rem] lg:mt-[3rem] !text-[#FFFFFF] md:mt-[3.5rem] mt-[0.2rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#FFFFFF] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -408,7 +408,7 @@ export default function VirtualcardPage() {
                                     className="mx-auto lg:mx-0 lg:mt-[2rem] bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[300px] lg:w-[480px] xl:w-[600px] 2xl:h-[532px] 2xl:w-[760px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
-                                        <Text size="12xl" as="p" className="!text-[#420442] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="!text-[#420442] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Real-Time Tracking
                                         </Text>
                                         <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[80%] text-align-center text-[12px] font-normal text-left">
@@ -435,7 +435,7 @@ export default function VirtualcardPage() {
                                     className="mx-auto lg:mx-0 mt-[0rem] lg:mt-[2rem] bg-contain md:bg-cover lg:bg-contain bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] lg:h-[430px]  xl:h-[535px] h-[330px] md:h-[360px] lg:w-[480px] xl:w-[600px] 2xl:h-[570px] 2xl:w-[755px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
-                                        <Text size="12xl" as="p" className="!text-[#420442] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="!text-[#420442] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Instant Issuance
                                         </Text>
                                         <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[60%] text-align-center text-[12px] font-normal text-left">
@@ -454,7 +454,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="12xl" as="p" className="2xl:mt-[18.5rem] xl:mt-[16.5rem] !text-[#DE1FD6] mt-[3rem] md:mt-[3rem] lg:mt-[11rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[18.5rem] xl:mt-[16.5rem] !text-[#DE1FD6] mt-[3rem] md:mt-[3rem] lg:mt-[11rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#DE1FD6] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />

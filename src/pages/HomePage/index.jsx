@@ -46,7 +46,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/world.svg')`;
+          lazyImage.style.backgroundImage = `url('images/home-world.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -64,7 +64,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/phones.svg')`;
+          lazyImage.style.backgroundImage = `url('images/home-3d-phone.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -82,7 +82,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/progress-img.svg')`;
+          lazyImage.style.backgroundImage = `url('images/home-progress.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -100,7 +100,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/cash-img.svg')`;
+          lazyImage.style.backgroundImage = `url('images/home-jump-cash.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -118,7 +118,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/color-card.svg')`;
+          lazyImage.style.backgroundImage = `url('images/home-color-card.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -226,7 +226,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/lock.svg')`;
+          lazyImage.style.backgroundImage = `url('images/home-lock.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -442,7 +442,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={cashRef}
-                className="bg-no-repeat mx-auto lg:mx-0 md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat bg-cover mx-auto lg:mx-0 md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">

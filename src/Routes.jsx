@@ -15,6 +15,7 @@ import AboutPage from "pages/AboutPage";
 import SendReceiveMoney from "pages/SendReceiveMoney";
 import ExchangePage from "pages/ExchangePage";
 import VirtualcardPage from "pages/VirtualcardPage"
+import InvestmentPage from "pages/InvestmentPage"
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -42,6 +43,11 @@ const ProjectRoutes = () => {
     {
       path: "virtualcard",
       element: <VirtualcardPage />,
+    },
+
+    {
+      path: "investment1",
+      element: <InvestmentPage />,
     },
 
     {

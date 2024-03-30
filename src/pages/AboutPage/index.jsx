@@ -32,7 +32,7 @@ export default function AboutPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/mush-img.svg')`;
+                    lazyImage.style.backgroundImage = `url('images/about-mush.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });
@@ -568,7 +568,7 @@ export default function AboutPage() {
                         <div>
                             <div
                                 ref={mushRef}
-                                className="mx-auto lg:mx-0 bg-contain lg:bg-contain md:bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] 2xl:h-[550px] lg:h-[450px] h-[300px] lg:w-[450px] xl:w-[550px] 2xl:w-[690px]"
+                                className="mx-auto lg:mt-[0.6rem] xl:mt-[0.7rem] lg:mx-0  rounded-[20px] lg:bg-cover bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] 2xl:h-[520px] xl:h-[425px] lg:h-[350px] h-[300px] lg:w-[450px] xl:w-[550px] 2xl:w-[690px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[90%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
