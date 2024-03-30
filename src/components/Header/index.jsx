@@ -79,7 +79,7 @@ export default function Header({ ...props }) {
           {isOpen && (
             <div
               ref={dropdownRef}
-              className="absolute top-full lg:left-[2rem] xl:left-[6rem] 2xl:left-[22rem] z-[2] bg-white-A700 rounded-lg shadow-lg mt-[5px] w-[399px] h-[411px]"
+              className="absolute top-full lg:left-[2rem] xl:left-[6rem] 2xl:left-[22rem] z-[2] bg-white-A700 rounded-lg shadow-lg mt-[5px] w-[399px] h-[511px]"
             >
               <ProductDropDown toggleMenu={toggleMenu} />
             </div>
@@ -87,7 +87,7 @@ export default function Header({ ...props }) {
           {isOpenHam && (
             <div
               ref={mambugerRef}
-              className="absolute top-full left-0 z-[2] bg-white-A700 rounded-lg shadow-lg md:h-[50vh] h-[70vh] w-[100vw] mt-[-6rem] ml-[-2rem]"
+              className="absolute top-full left-0 z-[2] bg-white-A700 rounded-lg shadow-lg md:min-h-[55vh] min-h-[55vh] w-[100vw] mt-[-6rem] ml-[-2rem]"
             >
               <HambugerMenu toggleMenu={toggleHambugerMenu} />
             </div>

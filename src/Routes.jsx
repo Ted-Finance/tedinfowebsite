@@ -16,6 +16,7 @@ import SendReceiveMoney from "pages/SendReceiveMoney";
 import ExchangePage from "pages/ExchangePage";
 import VirtualcardPage from "pages/VirtualcardPage"
 import InvestmentPage from "pages/InvestmentPage"
+import MultiCurrencyPage from "pages/MultiCurrencyPage"
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -34,6 +35,11 @@ const ProjectRoutes = () => {
       path: "sendreceivemoney",
       element: <SendReceiveMoney />,
     },
+
+    {
+      path: "multicurrency",
+      element: <MultiCurrencyPage/>,
+    },
     
     {
       path: "exchange",
@@ -46,17 +52,13 @@ const ProjectRoutes = () => {
     },
 
     {
-      path: "investment1",
+      path: "investment",
       element: <InvestmentPage />,
     },
 
     {
       path: "sendreceivemoneydesktop",
       element: <SendReceiveMoneyDesktop />,
-    },
-    {
-      path: "investment",
-      element: <SendReceiveMoneyDesktopThree />,
     },
     // {
     //   path: "macbookpro16one",

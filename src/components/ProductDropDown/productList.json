@@ -6,6 +6,12 @@
         "path": "sendreceivemoney"
     },
     {
+        "icon": "images/multicurrency-icon.svg",
+        "name": "Multicurrency Account",
+        "sunName": "Get a USD, GBP, ERO Account in minutes",
+        "path": "multicurrency"
+    },
+    {
         "icon": "images/convert.svg",
         "name": "Currency Exchange",
         "sunName": "Convert your currency to over 5 foreign currencies",

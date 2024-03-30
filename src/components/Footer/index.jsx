@@ -12,19 +12,19 @@ export default function Footer({ ...props }) {
               <ul className="flex flex-col md:flex-row justify-between xl:w-[50%] w-[90%] font-normal text-[14px] text-center text-align-center lg:text-left">
                 <li>
                   <Text as="p" className="!font-medium !text-[15px] !text-[#5BEBFF]">Products</Text>
-                  <a href="#">
+                  <a href="/sendreceivemoney">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">Send Money</Text>
                   </a>
-                  <a href="#">
+                  <a href="/multicurrency">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">Multicurrency Account</Text>
                   </a>
-                  <a href="#">
+                  <a href="/exchange">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">Currency Exchange</Text>
                   </a>
-                  <a href="#">
+                  <a href="/virtualcard">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">Virtual Dollar Card</Text>
                   </a>
-                  <a href="#">
+                  <a href="/investment">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">Investment</Text>
                   </a>
                 </li>
@@ -42,7 +42,7 @@ export default function Footer({ ...props }) {
                 </li>
                 <li>
                   <Text as="p" className="!font-medium !text-[15px] !text-[#5BEBFF]">Company</Text>
-                  <a href="#">
+                  <a href="/about">
                     <Text as="p" className="!font-normal !text-[12px] !text-[#E4E4E7]">About Us</Text>
                   </a>
                   <a href="#">

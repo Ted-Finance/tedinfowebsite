@@ -351,7 +351,7 @@ export default function AboutPage() {
                     </div>
 
                     <div className="lg:flex-row flex-col justify-start w-full mt-[26px] lg:mt-[47rem] xl:mt-[37rem] 2xl:mt-[33rem] gap-5 md:px-5 sm:gap-5  animate-horizontal hidden lg:block">
-                        <div class="flex items-center gap-5 animate-horizontal">
+                        <div className="flex items-center gap-5 animate-horizontal">
                             <Img
                                 src="images/img_3d_rendering_ba.png"
                                 alt="3drenderingba"
