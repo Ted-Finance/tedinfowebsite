@@ -18,7 +18,7 @@ export default function VirtualcardPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/home-color-card.gif')`;
+                    lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/original-22423f3fc33ac34f01b8e90ba6b0b1f0.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });

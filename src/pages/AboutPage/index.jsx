@@ -32,7 +32,7 @@ export default function AboutPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/about-mush.gif')`;
+                    lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/b8bd4e4273cceae2889d9d259b04f732.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });

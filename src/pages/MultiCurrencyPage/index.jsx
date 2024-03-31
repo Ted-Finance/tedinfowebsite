@@ -17,7 +17,7 @@ export default function MultiCurrencyPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/home-world.gif')`;
+                    lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/original-aef80321bc4fb0ff367b9c7e83ddf1fa.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });
@@ -53,7 +53,7 @@ export default function MultiCurrencyPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/multicurrency-big-mock.gif')`;
+                    lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/original-7cf85283cb67bf3bc8c387ce5ce754ec.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });

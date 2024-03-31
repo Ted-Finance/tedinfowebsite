@@ -46,7 +46,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/home-world.gif')`;
+          lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/original-aef80321bc4fb0ff367b9c7e83ddf1fa.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -118,7 +118,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/home-color-card.gif')`;
+          lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/original-22423f3fc33ac34f01b8e90ba6b0b1f0.gif')`;
           observer.unobserve(lazyImage);
         }
       });
@@ -154,7 +154,7 @@ export default function HomePage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `url('images/home-invest.gif')`;
+          lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/original-ef971b65ae3fd5d49f8b598.gif')`;
           observer.unobserve(lazyImage);
         }
       });

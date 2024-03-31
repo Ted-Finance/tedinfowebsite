@@ -17,7 +17,7 @@ export default function InvestmentPage() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
-                    lazyImage.style.backgroundImage = `url('images/home-invest.gif')`;
+                    lazyImage.style.backgroundImage = `url('https://tedfinance.s3.amazonaws.com/original-ef971b65ae3fd5d49f8b598.gif')`;
                     observer.unobserve(lazyImage);
                 }
             });
