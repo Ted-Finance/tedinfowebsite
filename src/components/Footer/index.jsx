@@ -118,7 +118,7 @@ export default function Footer({ ...props }) {
                 </Button>
               </div>
               <Text as="p" className="!text-gray-400 xl:!font-light font-normal text-[15px]">
-                TedFinance All Rights Reserved
+                Ted Finance All Rights Reserved
               </Text>
               <div className="flex flex-row justify-start items-center 2xl:w-[21%] xl:w-[25%] w-full 2xl:mr-3.5 xl:mr-3.5 lg:mr-[-35rem] md:mr-[-28rem] mr-[-7rem] gap-3">
                 <a href="#">

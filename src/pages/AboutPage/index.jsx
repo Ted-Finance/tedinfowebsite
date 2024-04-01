@@ -568,18 +568,18 @@ export default function AboutPage() {
                         <div>
                             <div
                                 ref={mushRef}
-                                className="mx-auto lg:mt-[0.6rem] xl:mt-[0.7rem] lg:mx-0  rounded-[20px] lg:bg-cover bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] 2xl:h-[520px] xl:h-[425px] lg:h-[350px] h-[300px] lg:w-[450px] xl:w-[550px] 2xl:w-[690px]"
+                                className="mx-auto lg:mt-[0.6rem] xl:mt-[0.7rem] lg:mx-0  rounded-[20px] lg:bg-cover bg-cover bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[300px] 2xl:h-[520px] xl:h-[425px] lg:h-[350px] h-[300px] lg:w-[450px] xl:w-[550px] 2xl:w-[690px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[90%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
                                         Fraud Detection & Prevention
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
                                         <>
                                             Our systems employ fraud detection algorithms to identify and prevent suspicious activity.
                                         </>
                                     </Text>
-                                    <div className="2xl:mt-[19rem] xl:mt-[12rem] lg:mt-[7rem] md:mt-16 mt-[4rem]">
+                                    <div className="2xl:mt-[19rem] xl:mt-[12rem] lg:mt-[7rem] md:mt-16 mt-[2rem]">
                                         <Button
                                             color="white_A700"
                                             size="4xl"
@@ -595,7 +595,7 @@ export default function AboutPage() {
                         <div >
                             <div
                                 ref={blackRef}
-                                className="bg-no-repeat mx-auto lg:mx-0 lg:bg-contain md:bg-cover bg-contain md:w-[710px] w-[360px] h-[300px] 2xl:h-[550px] lg:h-[450px] 2xl:w-[690px]  xl:w-[550px] lg:w-[450px]"
+                                className="bg-no-repeat mx-auto lg:mx-0 lg:bg-contain md:bg-cover bg-contain md:w-[710px] w-[300px] h-[300px] 2xl:h-[550px] lg:h-[450px] 2xl:w-[690px]  xl:w-[550px] lg:w-[450px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[90%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
@@ -606,7 +606,7 @@ export default function AboutPage() {
                                             Our Smart payment solutions utilize strong encryption technology to protect your financial information during transactions.
                                         </>
                                     </Text>
-                                    <div className="2xl:mt-[18rem] xl:mt-[12rem] lg:mt-[7rem] md:mt-12 mt-[3rem]">
+                                    <div className="2xl:mt-[18rem] xl:mt-[12rem] lg:mt-[7rem] md:mt-12 mt-[0rem]">
                                         <Button
                                             color="white_A700"
                                             size="4xl"
@@ -629,8 +629,8 @@ export default function AboutPage() {
                                 className="2xl:w-[50%] w-full 2xl:h-[450px] lg:h-[350px] z-[1] object-cover"
                             />
                             <div className="flex flex-col items-center justify-start 2xl:w-[50%]  w-full mt-[37px] ml-0">
-                                <Heading size="4xl" as="h4" className="2xl:text-[50px] xl:text-[42px] lg:text-[30px] text-[25px] font-bold text-center text-align-center">
-                                    Join the TedFince Today
+                                <Heading size="4xl" as="h4" className="2xl:text-[48px] xl:text-[37px] lg:text-[25px] text-[25px] font-bold text-center text-align-center">
+                                    Join the Ted Finance Today
                                 </Heading>
                                 <Text
                                     size="7xl"
@@ -639,7 +639,7 @@ export default function AboutPage() {
                                 >
                                     <span className="text-black-900_02 text-[18px]">
                                         <>
-                                            Download the TedFinance app today and experience the future of global finance. Take control
+                                            Download the Ted Finance app today and experience the future of global finance. Take control
                                             of your money, transact internationally with confidence, and unlock a world of financial
                                             possibilities.
                                             <br /><br className="block lg:hidden" />

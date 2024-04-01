@@ -44,3 +44,6 @@ select:focus {
   --tw-ring-color: "#ce2acd";
   border-color: "#ce2acd";
 }
+::placeholder {
+  color: red /* Replace with your desired color */
+}

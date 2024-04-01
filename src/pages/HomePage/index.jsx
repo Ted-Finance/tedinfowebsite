@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
+import lottie from 'lottie-web';
+import animationData from './home-main-ani.json';
 import { Text, Img, Input, Heading, Button } from "../../components";
 import Header from "../../components/Header";
 import TopFooter from "../../components/TopFooter";
@@ -239,6 +241,22 @@ export default function HomePage() {
     };
   }, []);
 
+  const animationContainer = useRef(null);
+
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: animationContainer.current,
+      renderer: 'svg', // Change the renderer type if needed (canvas, html)
+      loop: true, // Set loop to true or false as per your requirement
+      autoplay: true,
+      animationData: animationData // Your JSON animation data
+    });
+
+    return () => {
+      anim.destroy(); // Clean up animation when component unmounts
+    };
+  }, []);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const maxIndex = 2; // Assuming you have 3 divs with w-[29%]
 
@@ -263,7 +281,7 @@ export default function HomePage() {
         <Header />
         <div className="2xl:mx-[8rem] xl:mx-[5rem] mx-[2em] lg:mt-8">
           <div className="flex justify-center items-center lg:justify-end 2xl:mr-[11rem] xl:mr-[9rem] lg:mr-[5rem]">
-            <Img src="images/ngn.svg" alt="logo" className="lg:w-[300px] lg:h-[70px] w-[200px] h-[50px]" />
+            <Img src="images/home-currency-swap.gif" alt="logo" className="lg:w-[300px] lg:h-[70px] w-[200px] h-[50px] rounded-[4rem]" />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-start w-full mt-[2rem]">
@@ -271,9 +289,9 @@ export default function HomePage() {
               <Input
                 shape="round"
                 name="container_one"
-                placeholder="Your access to Global Financial Power"
+                value="Your access to Global Financial Power"
                 prefix={<Img src="images/img_icon.svg" alt="Icon" />}
-                className="w-[99%] 2xl:w-[48%] xl:w-[70%] lg:w-[70%] text-[15px] lg:text-lg md:w-[48%] md:ml-[12rem] lg:ml-0"
+                className="w-[99%] 2xl:w-[48%] xl:w-[70%] lg:w-[70%] md:text-[15px] text-[13px] lg:text-lg md:w-[48%] md:ml-[12rem] lg:ml-0"
               />
               <div className="flex flex-col items-center justify-start gap-3.5 w-[90vw] 2xl:w-[35vw] xl:w-[45vw] lg:w-[55vw]">
                 <Heading as="h2" className="!text-gray-900_01 text-[20px] font-semibold lg:font-bold lg:text-[30px] leading-[150%]  text-center text-align-center mr-[1.5rem] lg:text-left">
@@ -304,8 +322,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="">
-
-              <Img src="images/main.svg" alt="iphone mock up" className="lg:w-[1018px] w-[300px] ml-[2rem] md:ml-[13rem] lg:ml-0 mt-5 lg:mt-0" />
+            <div ref={animationContainer} className="2xl:w-[700px] xl:w-[650px] lg:w-[460px] w-[300px] ml-[2rem] md:ml-[13rem] lg:ml-0 mt-5 lg:mt-0"></div>
             </div>
             <div className="lg:hidden block ">
               <div className="flex flex-col justify-start items-center">
@@ -315,10 +332,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:mt-[8rem] mt-2">
+          <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:mt-[0rem] mt-2">
             <div className="w-full 2xl:w-[50%] xl:w-[60%]  lg:w-[70%]">
               <div className="flex flex-col items-start justify-start w-full gap-[19px]">
-                <Text size="" as="p" className="2xl:!text-white-A700 !text-purple-400 w-full text-[28px]  font-medium text-center text-align-center lg:text-left">
+                <Text size="" as="p" className="!text-white-A700  w-full text-[28px]  font-medium text-center text-align-center lg:text-left">
                   Manage Your World Finances with Ease: Introducing Multicurrency Virtual Accounts
                 </Text>
                 <Text size="5xl" as="p" className="!text-gray-900_01 2xl:text-[17px] text-center text-align-center text-[14px] font-normal lg:text-left">
@@ -344,13 +361,13 @@ export default function HomePage() {
             <div>
               <div
                 ref={worldRef}
-                className="bg-no-repeat mx-auto lg:mx-0 bg-cover lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] h-[393px] 2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover lg:mb-0 mb-6 md:w-[710px] w-[320px] rounded-[18px] h-[393px] 2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[50%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
                     Financial Freedom Without Borders
                   </Text>
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
                     <>
                       Say Goodbye to Borders: Receive Payments Like a Local, Get Virtual Accounts in Multiple Currencies (USD, EUR, GBP, NGN). Accept Payments from Anyone, Anywhere with your Multicurrency Bank Account.
                     </>
@@ -375,7 +392,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={phonesRef}
-                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[393px]  2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[320px] rounded-[18px] h-[393px]  2xl:w-[694px] xl:w-[550px] lg:w-[460px] lg:h-[400px] xl:h-[500px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#DE1FD6] mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[17px]  font-bold text-center text-align-center lg:text-left">
@@ -385,7 +402,7 @@ export default function HomePage() {
                   <Text size="" as="p" className="!text-[#FFFFFF] mt-[5rem] lg:mt-[3rem] xl:mt-[12rem] w-[90%] lg:w-[70%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
                     Separate Business & Personal
                   </Text>
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
                     <>
                       Use Virtual Accounts (USD, EUR, GBP, NGN) for Organized Receiving.
                     </>
@@ -426,7 +443,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={progressRef}
-                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[320px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#FFFFFF] mt-4  lg:mt-[3rem] block lg:hidden lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -442,7 +459,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={cashRef}
-                className="bg-no-repeat bg-cover mx-auto lg:mx-0 md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat bg-cover mx-auto lg:mx-0 md:w-[710px] w-[320px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#FFFFFF] mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -507,14 +524,14 @@ export default function HomePage() {
             <div>
               <div
                 ref={colorCardRef}
-                className="bg-no-repeat bg-cover mx-auto lg:mx-0 mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[500px] 2xl:w-[803px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat bg-cover mx-auto lg:mx-0 mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[320px] rounded-[18px] h-[300px] lg:h-[500px] 2xl:w-[803px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#FFFFFF] hidden lg:block mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
                     VIRTUAL DOLLAR CARD
                   </Text>
                   <div className="bg-[#FFFFFF] lg:h-[3px] w-[80px] h-[1px] hidden lg:block" />
-                  <Text size="" as="p" className="!text-[#FFFFFF] mt-[1rem] lg:mt-[9rem] w-[90%] lg:w-[70%] 2xl:w-[50%] text-[20px] lg:text-[25px]  !font-bold text-align-center lg:text-left">
+                  <Text size="" as="p" className="!text-[#FFFFFF] mt-[1rem] lg:mt-[9rem] w-[89%] lg:w-[70%] 2xl:w-[50%] text-[20px] lg:text-[25px]  !font-bold text-align-center lg:text-left">
                     Unlock a World of Possibilities with our Virtual Dollar Card
                   </Text>
                   <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left hidden lg:block">
@@ -560,7 +577,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={investRef}
-                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[320px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#DE1FD6] mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -583,7 +600,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={satRef}
-                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[320px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#FFFFFF] lg:!text-[#DE1FD6] mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -644,7 +661,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={manRef}
-                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[320px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
 
@@ -668,7 +685,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={qbRef}
-                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat mx-auto lg:mx-0 bg-cover md:w-[710px] w-[320px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                   <Text size="" as="p" className="!text-[#FFFFFF] lg:block hidden mt-4 lg:mt-[3rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">
@@ -681,7 +698,7 @@ export default function HomePage() {
                       Sign up today and experience the future of currency exchange. It's fast, secure, and empowers you to connect with the world financially.
                     </>
                   </Text>
-                  <div className="mt-[5rem] block lg:hidden">
+                  <div className="mt-[3rem] block lg:hidden">
                     <Button
                       color="white_A700"
                       size="4xl"
@@ -740,7 +757,7 @@ export default function HomePage() {
             <div>
               <div>
                 <div className="flex items-start justify-start w-full gap-[19px] lg:ml-[2rem]">
-                  <div className="2xl:pb-[50px] 2xl:pl-[50px] pb-5 pl-5 bg-[#F6B0A4] mx-auto lg:mx-0 relative rounded-[20px] mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[360px]  h-[450px] lg:h-[490px] lg:w-[650px]">
+                  <div className="2xl:pb-[50px] 2xl:pl-[50px] pb-5 pl-5 bg-[#F6B0A4] mx-auto lg:mx-0 relative rounded-[20px] mt-[1rem] 2xl:mt-[2rem] md:w-[710px] w-[300px]  h-[450px] lg:h-[490px] lg:w-[650px]">
                     <Img
                       src="images/img_abstract_design_224x213.png"
                       alt="abstractdesign"
@@ -845,7 +862,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={keyRef}
-                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[360px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
+                className="bg-cover mx-auto lg:mx-0 bg-no-repeat lg:mb-0 mb-6 md:w-[710px] w-[320px] rounded-[18px] lg:h-[600px] h-[300px] lg:w-[300px] xl:w-[360px] 2xl:w-[460px]"
               >
                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
 
@@ -869,7 +886,7 @@ export default function HomePage() {
             <div>
               <div
                 ref={lockRef}
-                className="bg-no-repeat mx-auto lg:mx-0 bg-contain md:bg-cover md:w-[710px] w-[360px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
+                className="bg-no-repeat mx-auto lg:mx-0 bg-contain md:bg-cover md:w-[710px] w-[320px] rounded-[18px] h-[300px] lg:h-[600px] 2xl:w-[925px]  xl:w-[725px] lg:w-[625px] "
               >
                 <div className="flex flex-col items-center justify-center w-full gap-[19px] md:ml-[2rem]">
                   <Text size="" as="p" className="!text-[#420442] md:mt-[15rem] mt-[13rem] 2xl:mt-[33rem] lg:mt-[32rem] 2xl:w-[9%] xl:w-[11%] lg:w-[13%] text-[10px] lg:text-[15px]  lg:!font-bold text-center text-align-center lg:text-left">

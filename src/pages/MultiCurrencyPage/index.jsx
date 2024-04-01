@@ -128,7 +128,7 @@ export default function MultiCurrencyPage() {
 
                                 <div
                                     ref={mobileToRef}
-                                    className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px]"
+                                    className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[300px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="" as="p" className="md:mt-[3rem] mt-[2rem] !text-[#CE2ACD] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -205,7 +205,7 @@ export default function MultiCurrencyPage() {
 
                             <div
                                 ref={sitRef}
-                                className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[640px] w-[350px] lg:h-[500px]  xl:h-[500px] h-[360px] lg:w-[950px] xl:w-[1100px] 2xl:w-[1399px] 2xl:h-[600px]"
+                                className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[640px] w-[300px] lg:h-[500px]  xl:h-[500px] h-[360px] lg:w-[950px] xl:w-[1100px] 2xl:w-[1399px] 2xl:h-[600px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="" as="p" className="md:mt-[3rem] mt-[2rem] !text-[#CE2ACD] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
@@ -240,7 +240,7 @@ export default function MultiCurrencyPage() {
                         <div className="m-auto flex lg:flex-row flex-col justify-between w-full 2xl:mt-[4rem] mt-[2rem]">
                             <div
                                 ref={mobilePcToRef}
-                                className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[640px] w-[350px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[450px] 2xl:w-[588px]"
+                                className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[640px] w-[300px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[450px] 2xl:w-[588px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="" as="p" className="md:mt-[3rem] mt-[1rem] !text-[#FFFFFF] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
@@ -270,7 +270,7 @@ export default function MultiCurrencyPage() {
                             <div>
                                 <div
                                     ref={friendsRef}
-                                    className="bg-no-repeat bg-cover mx-auto lg:mx-0 md:w-[640px] mt-[2rem] w-[350px] rounded-[18px] lg:h-[400px]  xl:h-[500px] h-[360px] 2xl:w-[800px]  xl:w-[625px] lg:w-[525px] "
+                                    className="bg-no-repeat bg-cover mx-auto lg:mx-0 md:w-[640px] mt-[2rem] w-[300px] rounded-[18px] lg:h-[400px]  xl:h-[500px] h-[360px] 2xl:w-[800px]  xl:w-[625px] lg:w-[525px] "
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="" as="p" className="md:mt-[2.5rem] mt-[2rem] !text-[#FFFFFF] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">

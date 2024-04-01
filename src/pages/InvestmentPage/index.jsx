@@ -288,7 +288,7 @@ export default function InvestmentPage() {
 
                                 <div
                                     ref={mobileToRef}
-                                    className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[360px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px]"
+                                    className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[320px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[500px] 2xl:w-[588px]"
                                 >
                                     <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                         <Text size="" as="p" className="!text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
@@ -461,7 +461,7 @@ export default function InvestmentPage() {
                         <div className="m-auto flex lg:flex-row flex-col justify-between w-full 2xl:mt-[4rem] mt-[2rem]">
                             <div
                                 ref={mobilePcToRef}
-                                className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[640px] w-[350px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[450px] 2xl:w-[588px]"
+                                className="rounded-[18px] border border-solid border-black-900 shadow-lg mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[640px] w-[320px] lg:h-[400px]  xl:h-[500px] h-[360px] lg:w-[400px] xl:w-[450px] 2xl:w-[588px]"
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[2rem]">
                                     <Text size="" as="p" className="md:mt-[3rem] mt-[1rem] !text-[#FFFFFF] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
@@ -490,7 +490,7 @@ export default function InvestmentPage() {
                             </div>
                             <div
                                 ref={sitRef}
-                                className="mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[360px] 2xl:h-[500px] lg:h-[415px]  xl:h-[519px] h-[500px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] "
+                                className="mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[320px] 2xl:h-[500px] lg:h-[415px]  xl:h-[519px] h-[500px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] "
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[3rem]">
 
@@ -502,7 +502,7 @@ export default function InvestmentPage() {
                             </div>
                             <div
                                 ref={friendsRef}
-                                className="mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[360px] 2xl:h-[500px] lg:h-[415px]  xl:h-[519px] h-[500px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px]"
+                                className="mx-auto lg:mx-0 mt-8 bg-cover  bg-no-repeat lg:mb-0 mb-6 md:w-[680px] w-[320px] 2xl:h-[500px] lg:h-[415px]  xl:h-[519px] h-[500px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px]"
                             >
 
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[3rem]">
