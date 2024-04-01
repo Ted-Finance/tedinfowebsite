@@ -289,6 +289,7 @@ export default function HomePage() {
               <Input
                 shape="round"
                 name="container_one"
+                disabled
                 value="Your access to Global Financial Power"
                 prefix={<Img src="images/img_icon.svg" alt="Icon" />}
                 className="w-[99%] 2xl:w-[48%] xl:w-[70%] lg:w-[70%] md:text-[15px] text-[13px] lg:text-lg md:w-[48%] md:ml-[12rem] lg:ml-0"
