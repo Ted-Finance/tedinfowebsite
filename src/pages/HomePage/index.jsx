@@ -280,7 +280,7 @@ export default function HomePage() {
       >
         <Header />
         <div className="2xl:mx-[8rem] xl:mx-[5rem] mx-[2em] lg:mt-8">
-          <div className="flex justify-center items-center lg:justify-end 2xl:mr-[11rem] xl:mr-[9rem] lg:mr-[5rem]">
+          <div className="flex justify-center items-center lg:justify-end 2xl:mr-[15rem] xl:mr-[5rem] lg:mr-[2rem]">
             <Img src="images/home-currency-swap.gif" alt="logo" className="lg:w-[300px] lg:h-[70px] w-[200px] h-[50px] rounded-[4rem]" />
           </div>
 
