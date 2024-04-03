@@ -292,7 +292,7 @@ export default function HomePage() {
                 disabled
                 value="Your access to Global Financial Power"
                 prefix={<Img src="images/img_icon.svg" alt="Icon" />}
-                className="w-[99%] 2xl:w-[48%] xl:w-[70%] lg:w-[70%] md:text-[15px] text-[13px] lg:text-lg md:w-[48%] md:ml-[12rem] lg:ml-0"
+                className="w-[99%] 2xl:w-[50%] xl:w-[70%] lg:w-[70%] md:text-[15px] text-[13px] lg:text-lg md:w-[48%] md:ml-[12rem] lg:ml-0"
               />
               <div className="flex flex-col items-center justify-start gap-3.5 w-[90vw] 2xl:w-[35vw] xl:w-[45vw] lg:w-[55vw]">
                 <Heading as="h2" className="!text-gray-900_01 text-[20px] font-semibold lg:font-bold lg:text-[30px] leading-[150%]  text-center text-align-center mr-[1.5rem] lg:text-left">
@@ -320,10 +320,25 @@ export default function HomePage() {
                     <Img src="images/playstore.svg" alt="playstore" className="lg:w-[200px] lg:h-[101px] lg:mt-[-0.1rem]" />
                   </div>
                 </div>
+                <div className="hidden lg:block">
+                  <div className="w-full">
+                    <div className="flex flex-col items-start justify-start w-full gap-[19px]">
+                      <Text size="" as="p" className="!text-gray-900_01 w-full text-[28px] lg:font-bold font-medium text-center text-align-center lg:text-left">
+                        Manage Your World Finances with Ease: Introducing Multicurrency Virtual Accounts
+                      </Text>
+                      <Text size="5xl" as="p" className="!text-gray-900_01 2xl:text-[17px] lg:font-bold text-center text-align-center text-[14px] font-normal lg:text-left">
+                        <>
+                          Get Virtual Accounts in USD, EUR, GBP, & NGN to receive payments from anyone, anywhere. A Virtual Account works just like a regular bank account.
+                        </>
+                      </Text>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
             <div className="">
-            <div ref={animationContainer} className="2xl:w-[700px] xl:w-[650px] lg:w-[460px] w-[300px] ml-[2rem] md:ml-[13rem] lg:ml-0 mt-5 lg:mt-0"></div>
+              <div ref={animationContainer} className="2xl:w-[700px] xl:w-[650px] lg:w-[460px] w-[300px] ml-[2rem] md:ml-[13rem] lg:ml-0 mt-5 lg:mt-0"></div>
             </div>
             <div className="lg:hidden block ">
               <div className="flex flex-col justify-start items-center">
@@ -334,7 +349,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:mt-[0rem] mt-2">
-            <div className="w-full 2xl:w-[50%] xl:w-[60%]  lg:w-[70%]">
+            <div className="w-full 2xl:w-[50%] xl:w-[60%]  lg:w-[70%] lg:hidden block">
               <div className="flex flex-col items-start justify-start w-full gap-[19px]">
                 <Text size="" as="p" className="!text-white-A700  w-full text-[28px]  font-medium text-center text-align-center lg:text-left">
                   Manage Your World Finances with Ease: Introducing Multicurrency Virtual Accounts
@@ -1139,9 +1154,9 @@ export default function HomePage() {
             </Button>
           </div>
           <TopFooter />
-          
+
         </div>
-        
+
         <Footer />
       </div>
     </>

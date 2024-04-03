@@ -120,7 +120,7 @@ export default function Footer({ ...props }) {
               <Text as="p" className="!text-gray-400 xl:!font-light font-normal text-[15px]">
                 Ted Finance All Rights Reserved
               </Text>
-              <div className="flex flex-row justify-start items-center 2xl:w-[21%] xl:w-[25%] w-full 2xl:mr-3.5 xl:mr-3.5 lg:mr-[-35rem] md:mr-[-28rem] mr-[-7rem] gap-3">
+              <div className="flex flex-row justify-start items-center 2xl:w-[21%] xl:w-[25%] w-full 2xl:mr-3.5 xl:mr-3.5 lg:mr-[-35rem] md:mr-[-28rem] mr-[-5rem] gap-3">
                 <a href="#">
                   <Text as="p" className="!text-gray-400 xl:!font-light  text-center text-align-center w-full font-normal text-[15px] lg:text-left">
                     Privacy Policy
