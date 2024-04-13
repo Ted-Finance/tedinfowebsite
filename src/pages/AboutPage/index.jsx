@@ -101,8 +101,8 @@ export default function AboutPage() {
                             </Text>
 
                             <ul className="list-disc w-[100%] pl-[2rem]">
-                                <li><span className="text-black-900_02 font-semibold text-[12px]">Eliminate remittance barriers: </span>
-                                    <span className="text-black-900_02 text-[12px]">
+                                <li><span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">Eliminate remittance barriers: </span>
+                                    <span className="text-black-900_02 lg:text-[15px] text-[12px]">
                                         <>
                                             Sending and receiving money internationally should be effortless and affordable. TedFinance
                                             removes the complexities and high fees often associated with traditional money transfers.
@@ -111,8 +111,8 @@ export default function AboutPage() {
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">Empower financial inclusion: </span>
-                                    <span className="text-black-900_0 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">Empower financial inclusion: </span>
+                                    <span className="text-black-900_0 lg:text-[15px] text-[12px]">
                                         <>
                                             We are committed to financial accessibility for all. Our app caters to individuals and businesses,
                                             regardless of location or financial background.
@@ -121,8 +121,8 @@ export default function AboutPage() {
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">Foster financial security: </span>
-                                    <span className="text-black-900_0 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">Foster financial security: </span>
+                                    <span className="text-black-900_0 lg:text-[15px] text-[12px]">
                                         <>
                                             TedFinance prioritizes the safety and security of your funds. We
                                             implement robust security measures to ensure your transactions are protected.
@@ -146,14 +146,14 @@ export default function AboutPage() {
                                 </>
 
                             </Text>
-                            <span className="text-black-900_02 font-semibold text-[12px]">
+                            <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">
                                 Key Features
                             </span>
 
                             <ul className="list-disc w-[100%] pl-[2rem] mt-[0.5rem]">
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">International Money Transfers: </span>
-                                    <span className="text-black-900_02 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">International Money Transfers: </span>
+                                    <span className="text-black-900_02 lg:text-[15px] text-[12px]">
                                         <>
                                             Send and receive money seamlessly from any country, with competitive exchange rates and low fees.
                                             <br /><br />
@@ -161,8 +161,8 @@ export default function AboutPage() {
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">Multicurrency Virtual Bank Account: </span>
-                                    <span className="text-black-900_02 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">Multicurrency Virtual Bank Account: </span>
+                                    <span className="text-black-900_02 lg:text-[15px] text-[12px]">
                                         <>
                                             Get Virtual Accounts in USD, EUR, GBP, & NGN to receive payments from anyone, anywhere. A Virtual Account works just like a regular bank account.
                                             <br /><br />
@@ -170,8 +170,8 @@ export default function AboutPage() {
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">US Dollar Virtual Card: </span>
-                                    <span className="text-black-900_0 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">US Dollar Virtual Card: </span>
+                                    <span className="text-black-900_0 lg:text-[15px] text-[12px]">
                                         <>
                                             Enjoy the convenience and security of a virtual card for online transactions
                                             anywhere in the world. Make purchases and pay bills in USD without currency exchange hassles.
@@ -180,8 +180,8 @@ export default function AboutPage() {
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">Currency Exchange: </span>
-                                    <span className="text-black-900_02 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">Currency Exchange: </span>
+                                    <span className="text-black-900_02 lg:text-[15px] text-[12px]">
                                         <>
                                             we believe the world shouldn't have financial borders. That's why we offer seamless currency exchange solutions, empowering you to Explore the globe without currency woes. Convert your money to local currencies for free, ensuring smooth and enjoyable travel experiences.
                                             <br /><br />
@@ -189,8 +189,8 @@ export default function AboutPage() {
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">Investment: </span>
-                                    <span className="text-black-900_02 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">Investment: </span>
+                                    <span className="text-black-900_02 lg:text-[15px] text-[12px]">
                                         <>
                                             Unleash your inner investor and empower your financial future with Investment, our user-friendly platform allows you to seamlessly buy and sell a diverse range of US stocks, all from the comfort of your own device.
                                             Whether you're a seasoned trader seeking advanced tools or a curious beginner looking to dip your toes into the market,
@@ -200,8 +200,8 @@ export default function AboutPage() {
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="text-black-900_02 font-semibold text-[12px]">Secure Platform: </span>
-                                    <span className="text-black-900_0 text-[12px]">
+                                    <span className="text-black-900_02 font-semibold lg:text-[15px] text-[12px]">Secure Platform: </span>
+                                    <span className="text-black-900_0 lg:text-[15px] text-[12px]">
                                         <>
                                             TedFinance prioritizes your financial security. We use industry-leading security
                                             protocols and data encryption to safeguard your information and transactions.
@@ -574,7 +574,7 @@ export default function AboutPage() {
                                     <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[90%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
                                         Fraud Detection & Prevention
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                         <>
                                             Our systems employ fraud detection algorithms to identify and prevent suspicious activity.
                                         </>
@@ -601,12 +601,12 @@ export default function AboutPage() {
                                     <Text size="12xl" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[90%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
                                         Advanced Encryption
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[85%] xl:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                         <>
                                             Our Smart payment solutions utilize strong encryption technology to protect your financial information during transactions.
                                         </>
                                     </Text>
-                                    <div className="2xl:mt-[18rem] xl:mt-[12rem] lg:mt-[7rem] md:mt-12 mt-[0rem]">
+                                    <div className="2xl:mt-[18rem] xl:mt-[12rem] lg:mt-[6rem] md:mt-12 mt-[0rem]">
                                         <Button
                                             color="white_A700"
                                             size="4xl"

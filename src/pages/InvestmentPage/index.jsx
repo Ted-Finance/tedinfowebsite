@@ -102,7 +102,7 @@ export default function InvestmentPage() {
                                 <Text
                                     size="7xl"
                                     as="p"
-                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal text-[13px] text-center text-align-center lg:text-left"
+                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal lg:text-[15px] text-[13px] text-center text-align-center lg:text-left"
                                 >
                                     <>
                                         Our user-friendly interface makes investing <br className="hidden lg:block" />
@@ -295,10 +295,10 @@ export default function InvestmentPage() {
                                             INVESTMENTS
                                         </Text>
                                         <div className="bg-[#FFFFFF]  lg:h-[3px] w-[49px] h-[1px]" />
-                                        <Text size="" as="p" className="2xl:mt-[14rem] xl:mt-[12rem] lg:mt-[5rem] !text-[#FFFFFF] mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[10rem] xl:mt-[10rem] lg:mt-[2rem] !text-[#FFFFFF] mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Effortless Investing
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Our user-friendly platform makes investing accessible and straightforward.
                                                 Invest in a variety of assets with just a few clicks, all from the comfort of your device.
@@ -339,7 +339,7 @@ export default function InvestmentPage() {
                                     <Text size="" as="p" className="!text-[#000000] w-full text-[20px] lg:text-[25px]  font-medium text-align-center text-center">
                                         Unleash the Potential of Your Money: Explore Stock Investment
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center">
+                                    <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center">
                                         <>
                                             Stock investment, also known as equity investing, allows you to become a partial owner in companies.
                                             By purchasing shares of publicly traded companies, you gain the opportunity to profit from their growth.
@@ -446,7 +446,7 @@ export default function InvestmentPage() {
                                             <Text size="" as="p" className="!text-[#000000] w-full text-[20px] font-medium text-align-center text-center">
                                                 Multiple Investment Options:
                                             </Text>
-                                            <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center">
+                                            <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center">
                                                 <>
                                                     Explore a curated selection of popular stocks and ETFs (Exchange-Traded Funds) to diversify your
                                                     portfolio and align with your investment goals.
@@ -467,7 +467,7 @@ export default function InvestmentPage() {
                                     <Text size="" as="p" className="md:mt-[3rem] mt-[1rem] !text-[#FFFFFF] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
                                         Minimum Investment Flexibility
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                         <>
                                             Start small! We offer a low minimum investment amount to get you started on your investing journey.
                                         </>
@@ -482,7 +482,7 @@ export default function InvestmentPage() {
                                             Get Started
                                         </Button>
                                     </div>
-                                    <Text size="" as="p" className="!text-[#FFFFFF] 2xl:mt-[9rem] xl:mt-[9rem] lg:mt-[5rem] mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                    <Text size="" as="p" className="!text-[#FFFFFF] 2xl:mt-[7rem] xl:mt-[6rem] lg:mt-[3rem] mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                         INVESTMENTS
                                     </Text>
                                     <div className="bg-[#FFFFFF]  lg:h-[3px] w-[49px] h-[1px]" />
@@ -494,7 +494,7 @@ export default function InvestmentPage() {
                             >
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[3rem]">
 
-                                    <Text size="" as="p" className="!text-[#DE1FD6] 2xl:mt-[27rem] xl:mt-[27rem] lg:mt-[20rem] mt-[25rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                    <Text size="" as="p" className="!text-[#DE1FD6] 2xl:mt-[26rem] xl:mt-[26rem] lg:mt-[20rem] mt-[25rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                         INVESTMENTS
                                     </Text>
                                     <div className="bg-[#DE1FD6]  lg:h-[3px] w-[49px] h-[1px]" />
@@ -506,10 +506,10 @@ export default function InvestmentPage() {
                             >
 
                                 <div className="flex flex-col items-start justify-start w-full gap-[19px] ml-[3rem]">
-                                    <Text size="" as="p" className="lg:mt-[3rem] md:mt-[4rem] mt-[2rem] !text-[#FFFFFF] lg:w-[90%] xl:w-[70%] 2xl:w-[70%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
+                                    <Text size="" as="p" className="lg:mt-[3rem] md:mt-[4rem] mt-[2rem] !text-[#FFFFFF] lg:w-[80%] xl:w-[70%] 2xl:w-[70%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
                                         Recurring Investments
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] 2xl:w-[80%] xl:w-[90%] lg:w-[80%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                         <>
                                             Recurring Investments: Set up automated, recurring investments to build wealth effortlessly over
                                             time. Invest consistently and watch your portfolio grow.
@@ -525,7 +525,7 @@ export default function InvestmentPage() {
                                             Get Started
                                         </Button>
                                     </div>
-                                    <Text size="" as="p" className="!text-[#FFFFFF] 2xl:mt-[9rem] xl:mt-[8rem] lg:mt-[4rem] mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                    <Text size="" as="p" className="!text-[#FFFFFF] 2xl:mt-[6rem] xl:mt-[4.5rem] lg:mt-[0rem] mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                         INVESTMENTS
                                     </Text>
                                     <div className="bg-[#FFFFFF]  lg:h-[3px] w-[49px] h-[1px]" />

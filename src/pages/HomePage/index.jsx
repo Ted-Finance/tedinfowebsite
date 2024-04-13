@@ -383,7 +383,7 @@ export default function HomePage() {
                   <Text size="" as="p" className="!text-[#FFFFFF] mt-[2rem] w-[90%] lg:w-[50%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
                     Financial Freedom Without Borders
                   </Text>
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] lg:text-[15px] font-normal text-left">
                     <>
                       Say Goodbye to Borders: Receive Payments Like a Local, Get Virtual Accounts in Multiple Currencies (USD, EUR, GBP, NGN). Accept Payments from Anyone, Anywhere with your Multicurrency Bank Account.
                     </>
@@ -418,7 +418,7 @@ export default function HomePage() {
                   <Text size="" as="p" className="!text-[#FFFFFF] mt-[5rem] lg:mt-[3rem] xl:mt-[12rem] w-[90%] lg:w-[70%] text-[20px] lg:text-[25px]  font-medium text-align-center text-left">
                     Separate Business & Personal
                   </Text>
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[85%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                     <>
                       Use Virtual Accounts (USD, EUR, GBP, NGN) for Organized Receiving.
                     </>
@@ -445,7 +445,7 @@ export default function HomePage() {
                 <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[25px]  font-medium text-align-center text-center">
                   Global Money Transfer
                 </Text>
-                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center">
+                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center">
                   <>
                     At Ted Finance, we understand the importance of staying connected with loved ones across borders. That's why we offer a convenient, secure, and affordable
                     way to send  money directly to individuals and businesses in almost any country.
@@ -485,7 +485,7 @@ export default function HomePage() {
                   <Text size="" as="p" className="!text-[#FFFFFF] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[25px]  lg:!font-bold text-center text-align-center lg:text-left">
                     Send Money to over 100 Countries
                   </Text>
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                     <>
                       The world is your family. Send money to almost any country with Ted Finance's secure and affordable international transfer service.
                     </>
@@ -510,7 +510,7 @@ export default function HomePage() {
                 <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[25px]  font-medium text-align-center text-center">
                   Virtual USD Dollar Card
                 </Text>
-                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center">
+                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center">
                   <>
                     Tap. Pay. Explore. Manage your money on the go with easy top-ups and track spending with confidence
                   </>
@@ -528,7 +528,7 @@ export default function HomePage() {
                     <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[20px] text-center  font-medium text-align-center lg:text-left">
                       Make seamless international payments
                     </Text>
-                    <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] text-center  font-normal lg:text-left">
+                    <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] text-center  font-normal lg:text-left">
                       <>
                         Shop online, pay for subscriptions, and enjoy global services directly in USD, eliminating the hassle of currency conversions and transaction fees.
                       </>
@@ -547,10 +547,10 @@ export default function HomePage() {
                     VIRTUAL DOLLAR CARD
                   </Text>
                   <div className="bg-[#FFFFFF] lg:h-[3px] w-[80px] h-[1px] hidden lg:block" />
-                  <Text size="" as="p" className="!text-[#FFFFFF] mt-[1rem] lg:mt-[9rem] w-[89%] lg:w-[70%] 2xl:w-[50%] text-[20px] lg:text-[25px]  !font-bold text-align-center lg:text-left">
+                  <Text size="" as="p" className="!text-[#FFFFFF] mt-[1rem] xl:mt-[9rem] lg:mt-[6rem] w-[89%] lg:w-[70%] 2xl:w-[50%] text-[20px] lg:text-[25px]  !font-bold text-align-center lg:text-left">
                     Unlock a World of Possibilities with our Virtual Dollar Card
                   </Text>
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left hidden lg:block">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left hidden lg:block">
                     <>
                       we empower you to shop, subscribe, and pay securely online, anywhere in  the world. We offer innovative virtual dollar card solutions designed to  remove limitations and give you complete control over your online  spending.
                     </>
@@ -580,7 +580,7 @@ export default function HomePage() {
                 <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[25px]  font-medium text-align-center text-center">
                   Buy & Sell US Stocks
                 </Text>
-                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center">
+                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center">
                   <>
                     Unleash your inner investor and empower your financial future with Investment, our user-friendly platform allows you to seamlessly buy and sell a diverse range of US stocks, all from the comfort of your own device. Whether you're a seasoned trader seeking advanced tools or a curious beginner looking to dip your toes into the market, Investment provides a secure and intuitive experience to navigate the exciting world of US equities.
                   </>
@@ -633,10 +633,10 @@ export default function HomePage() {
                       Buy Stock
                     </Button>
                   </div>
-                  <Text size="" as="p" className="!text-[#FFFFFF] lg:mt-[17rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[25px]  lg:!font-bold text-center text-align-center lg:text-left">
+                  <Text size="" as="p" className="!text-[#FFFFFF] lg:mt-[15rem] xl:mt-[17rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[25px]  lg:!font-bold text-center text-align-center lg:text-left">
                     Buy S&P 500 Stocks
                   </Text>
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[50%] text-align-center text-[12px] font-normal text-left">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[70%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                     <>
                       Our user-friendly platform makes investing accessible and straightforward. Invest in a variety of Nigerian and US assets with just a few clicks, all from the comfort of your device.
                     </>
@@ -664,7 +664,7 @@ export default function HomePage() {
                 <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[25px]  font-medium text-align-center text-center">
                   Currency Exchange
                 </Text>
-                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center">
+                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center">
                   <>
                     we believe the world shouldn't have financial borders. That's why we offer seamless currency exchange solutions, empowering you to Explore the globe without currency woes. Convert your money to local currencies for free, ensuring smooth and enjoyable travel experiences.
                   </>
@@ -709,7 +709,7 @@ export default function HomePage() {
                   </Text>
                   <div className="bg-[#FFFFFF] lg:w-[40px] lg:h-[3px] w-[70px] h-[1px] lg:block hidden" />
 
-                  <Text size="5xl" as="p" className="!text-[#FFFFFF] mt-4 lg:mt-[20rem] w-[90%] md:w-[80%] lg:w-[80%] text-align-center text-[12px] font-normal text-left">
+                  <Text size="5xl" as="p" className="!text-[#FFFFFF] mt-4 lg:mt-[20rem] w-[90%] md:w-[80%] lg:w-[80%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                     <>
                       Sign up today and experience the future of currency exchange. It's fast, secure, and empowers you to connect with the world financially.
                     </>
@@ -752,7 +752,7 @@ export default function HomePage() {
                     <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[20px] font-medium text-align-center text-left">
                       Enjoy greater control & Experience enhanced security
                     </Text>
-                    <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-left">
+                    <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                       <>
                         Manage your spending effortlessly with real-time transaction notifications and the ability to instantly block or unblock your card including Benefit from advanced security features like two-factor authentication and in-app card controls to safeguard your financial information.
                       </>
@@ -854,7 +854,7 @@ export default function HomePage() {
                 <Text size="" as="p" className=" !text-purple-400 w-full text-[28px]  font-medium text-center text-align-center lg:text-left">
                   Data & Security
                 </Text>
-                <Text size="5xl" as="p" className="!text-gray-900_01 text-center text-align-center text-[12px] font-normal lg:text-left">
+                <Text size="5xl" as="p" className="!text-gray-900_01 text-center text-align-center lg:text-[15px] text-[12px] font-normal lg:text-left">
                   <>
                     At Ted Finance, we understand that security is paramount when it comes to your money. That's why we take pride in implementing robust security measures to protect your financial information and transactions.  Specifically, we adhere to the Payment Card Industry Data Security Standard (PCI-DSS) for both our Virtual Dollar Cards and International Transfers.
                   </>
@@ -1084,7 +1084,7 @@ export default function HomePage() {
                 <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[25px]  font-medium text-align-center text-center lg:text-left">
                   Frequently Asked Questions
                 </Text>
-                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center lg:text-left">
+                <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center lg:text-left">
                   <>
                     Do you have any questions? Contact Us.
                   </>

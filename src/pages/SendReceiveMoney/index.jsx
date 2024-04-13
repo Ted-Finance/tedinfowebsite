@@ -136,7 +136,7 @@ export default function SendReceiveMoney() {
                                 <Text
                                     size="7xl"
                                     as="p"
-                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal text-[13px] text-center text-align-center lg:text-left"
+                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal text-[13px] lg:text-[15px] text-center text-align-center lg:text-left"
                                 >
                                     <>
                                         You can Send and Receive Money from Anyone & Anywhere in <br className="hidden lg:block" />
@@ -167,7 +167,7 @@ export default function SendReceiveMoney() {
                                             SEND MONEY
                                         </Text>
                                         <div className="bg-[#DE1FD6] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
-                                        <Text size="5xl" as="p" className="!text-[#420442] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#420442] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px]   text-[12px] font-normal text-left">
                                             <>
                                                 The World is Your Family. Send Money Across Borders, Anytime.
                                             </>
@@ -194,7 +194,7 @@ export default function SendReceiveMoney() {
                                             Send & Generate Receipt
                                         </Text>
 
-                                        <Text size="5xl" as="p" className="!text-[#420442] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#420442] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Generate receipt and your transaction history within seconds
                                             </>
@@ -225,7 +225,7 @@ export default function SendReceiveMoney() {
                                             24/7 Support
                                         </Text>
 
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Our dedicated customer support team is always here to assist you.
                                             </>
@@ -240,7 +240,7 @@ export default function SendReceiveMoney() {
                                                 Send Now
                                             </Button>
                                         </div>
-                                        <Text size="" as="p" className="text-[#DE1FD6] md:mt-[2rem] mt-[3rem] 2xl:mt-[5rem] xl:mt-[3rem] lg:mt-[7rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="text-[#DE1FD6] md:mt-[2rem] mt-[3rem] 2xl:mt-[5rem] xl:mt-[3rem] lg:mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[10px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             SEND MONEY
                                         </Text>
                                         <div className="bg-[#DE1FD6]  lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -293,7 +293,7 @@ export default function SendReceiveMoney() {
                                             Fast & Secure
                                         </Text>
 
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[60%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%]  text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             Your transfers are processed quickly and securely, with advanced fraud prevention measures in place.
                                         </Text>
 
@@ -324,7 +324,7 @@ export default function SendReceiveMoney() {
                                             Competitive Rates
                                         </Text>
 
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] lg:w-[60%] text-align-center text-[14px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[90%] md:w-[80%] text-align-center text-[14px] font-normal text-left">
                                             Enjoy low and transparent rates with no hidden fees, saving you money on every transfer.
                                         </Text>
 

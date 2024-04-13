@@ -117,11 +117,11 @@ export default function VirtualcardPage() {
                                 <Text
                                     size="7xl"
                                     as="p"
-                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal text-[13px] text-center text-align-center lg:text-left"
+                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal lg:text-[15px] text-[13px] text-center text-align-center lg:text-left"
                                 >
                                     <>
-                                        Virtual Dollar Card is your key to seamless international spending. It's <br className="hidden lg:block" />
-                                        a secure, prepaid card that functions just like a regular debit card, <br className="hidden lg:block" />
+                                        Virtual Dollar Card is your key to seamless international spending. It's <br className="hidden xl:block" />
+                                        a secure, prepaid card that functions just like a regular debit card, <br className="hidden xl:block" />
                                         but resides entirely within the digital world
                                     </>
                                 </Text>
@@ -309,7 +309,7 @@ export default function VirtualcardPage() {
                                         <Text size="" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Shop Online with Ease
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Shop online & Pay easily with our  Virtual  Dollar Card
                                             </>
@@ -324,7 +324,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="" as="p" className="2xl:mt-[7rem] xl:mt-[5rem] !text-[#FFFFFF] lg:mt-[1rem] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[7rem] xl:mt-[5rem] !text-[#FFFFFF] lg:mt-[0.1rem] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#FFFFFF] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -339,7 +339,7 @@ export default function VirtualcardPage() {
                                         <Text size="" as="p" className="!text-[#DE1FD6] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Top Up on the Go
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[80%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[80%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Conveniently reload your virtual card with funds from your Ted Finance Wallet whenever needed
                                             </>
@@ -354,7 +354,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="" as="p" className="2xl:mt-[12rem] xl:mt-[11rem] !text-[#DE1FD6] mt-[2rem] md:mt-[3rem] lg:mt-[5rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[12rem] xl:mt-[11rem] !text-[#DE1FD6] mt-[2rem] md:mt-[3rem] lg:mt-[4rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#DE1FD6] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -369,7 +369,7 @@ export default function VirtualcardPage() {
                                         <Text size="" as="p" className="!text-[#FFFFFF] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Subscription Savior
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[80%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] xl:w-[80%] lg:w-[85%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Pay for your favorite streaming services, subscriptions, and online memberships without worrying about currency conversion fees.
                                             </>
@@ -384,7 +384,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="" as="p" className="2xl:mt-[9rem] xl:mt-[8rem] lg:mt-[3rem] !text-[#FFFFFF] md:mt-[3.5rem] mt-[0.2rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[8rem] xl:mt-[6rem] lg:mt-[0.5rem] !text-[#FFFFFF] md:mt-[3.5rem] mt-[0.2rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#FFFFFF] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
@@ -411,7 +411,7 @@ export default function VirtualcardPage() {
                                         <Text size="" as="p" className="!text-[#420442] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Real-Time Tracking
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[80%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] xl:w-[70%] lg:w-[80%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Real-Time Tracking: Stay in control with real-time transaction history and balance updates.
                                             </>
@@ -438,7 +438,7 @@ export default function VirtualcardPage() {
                                         <Text size="" as="p" className="!text-[#420442] md:mt-[3rem] mt-[1rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Instant Issuance
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[60%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#000000] w-[80%] md:w-[80%] lg:w-[60%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Instant Issuance: Get your virtual card instantly
                                                 after approval, ready to use right away.
@@ -454,7 +454,7 @@ export default function VirtualcardPage() {
                                                 Get Started
                                             </Button>
                                         </div>
-                                        <Text size="" as="p" className="2xl:mt-[18.5rem] xl:mt-[16.5rem] !text-[#DE1FD6] mt-[2rem] md:mt-[3rem] lg:mt-[11rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className="2xl:mt-[18.5rem] xl:mt-[16.5rem] !text-[#DE1FD6] mt-[2rem] md:mt-[3rem] lg:mt-[10rem] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             VIRTUAL US DOLLAR CARD
                                         </Text>
                                         <div className="bg-[#DE1FD6] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />

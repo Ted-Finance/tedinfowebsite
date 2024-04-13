@@ -66,7 +66,7 @@ export default function ExchangePage() {
                                 <Text
                                     size="7xl"
                                     as="p"
-                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal text-[13px] text-center text-align-center lg:text-left"
+                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal lg:text-[15px] text-[13px] text-center text-align-center lg:text-left"
                                 >
                                     <>
                                         Save on currency exchange: Convert your money to foreign <br className="hidden lg:block" />
@@ -97,7 +97,7 @@ export default function ExchangePage() {
                                             CURRENCY EXCHANGE
                                         </Text>
                                         <div className="bg-[#DE1FD6] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px]" />
-                                        <Text size="5xl" as="p" className="!text-[#420442] w-[80%] md:w-[80%] 2xl:w-[90%] xl:w-[70%] lg:w-[80%] text-align-center text-[12px] font-normal text-left 2xl:mt-[19rem] xl:mt-[15rem] lg:mt-[7rem] mt-[0rem]">
+                                        <Text size="5xl" as="p" className="!text-[#420442] w-[80%] md:w-[80%] 2xl:w-[80%] xl:w-[70%] lg:w-[80%] text-align-center lg:text-[15px] text-[12px] font-normal text-left 2xl:mt-[16rem] xl:mt-[14.5rem] lg:mt-[7rem] mt-[0rem]">
                                             <>
                                                 We believe in hassle-free exchange, convert your currencies effortlessly now
                                             </>
@@ -134,7 +134,7 @@ export default function ExchangePage() {
                                             </Button>
                                         </div>
                                         <div className="bg-[#FFFFFF] lg:w-[176px] lg:h-[3px] w-[100px] h-[1px] hidden lg:block" />
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[60%] text-align-center text-[12px] font-normal text-left 2xl:mt-[19rem] xl:mt-[15rem] lg:mt-[7rem] mt-[7rem]">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] text-align-center lg:text-[15px] text-[12px] font-normal text-left 2xl:mt-[18rem] xl:mt-[14rem] lg:mt-[7rem] mt-[7rem]">
                                             <>
                                                 We offer a comprehensive selection of currencies, constantly expanding to meet your evolving global needs.
                                             </>
@@ -176,7 +176,7 @@ export default function ExchangePage() {
                                             <Text size="12xl" as="p" className="!text-[#CE2ACD] w-full text-[20px] lg:text-[20px]  font-medium text-align-center text-center">
                                             Effortless Money Management, Anywhere in the World
                                             </Text>
-                                            <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center text-[12px] font-normal text-center">
+                                            <Text size="5xl" as="p" className="!text-[#420442] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center">
                                                 <>
                                                 At TedFinance, we believe finances shouldn't be confined by borders. Our innovative wallet app empowers you to send, 
                                                 receive, and manage your money globally with ease.  

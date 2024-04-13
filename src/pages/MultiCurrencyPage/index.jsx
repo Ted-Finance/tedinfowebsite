@@ -103,7 +103,7 @@ export default function MultiCurrencyPage() {
                                 <Text
                                     size="7xl"
                                     as="p"
-                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal text-[13px] text-center text-align-center lg:text-left"
+                                    className="lg:mt-[10px] mt-0 !text-[#000000] !font-normal lg:text-[15px] text-[13px] text-center text-align-center lg:text-left"
                                 >
                                     <>
                                         Hold and Receive funds in USD, GBP,  EUR, and NGN bank accounts <br className="hidden lg:block" />
@@ -134,7 +134,7 @@ export default function MultiCurrencyPage() {
                                         <Text size="" as="p" className="md:mt-[3rem] mt-[2rem] !text-[#CE2ACD] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             Hold Multiple Currencies
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Manage your Bank Account(s) entirely online, accessible from anywhere in the world. No need to visit physical branches.
                                             </>
@@ -163,7 +163,7 @@ export default function MultiCurrencyPage() {
                                                 <Text size="" as="p" className="!text-[#CE2ACD] w-full text-[20px] font-medium text-align-center text-center lg:text-left">
                                                     Receive Funds Globally
                                                 </Text>
-                                                <Text size="5xl" as="p" className="!text-[#000000] w-full text-align-center text-[12px] font-normal text-center lg:text-left">
+                                                <Text size="5xl" as="p" className="!text-[#000000] w-full text-align-center lg:text-[15px] text-[12px] font-normal text-center lg:text-left">
                                                     <>
                                                         Effortlessly receive international payments in different currencies via ACH,
                                                         SWIFT & SEPA, perfect for freelancers, remote workers, or those with family abroad.
@@ -211,7 +211,7 @@ export default function MultiCurrencyPage() {
                                     <Text size="" as="p" className="md:mt-[3rem] mt-[2rem] !text-[#CE2ACD] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
                                         Local Account Details
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#CE2ACD] w-[90%] md:w-[80%] xl:w-[40%] lg:w-[60%] text-align-center text-[12px] font-normal text-left">
+                                    <Text size="5xl" as="p" className="!text-[#CE2ACD] w-[90%] md:w-[80%] xl:w-[40%] lg:w-[60%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                         <>
                                             Receive international payments with ease using dedicated virtual IBAN (Europe) or routing number (US)
                                             details for each currency you hold.
@@ -246,7 +246,7 @@ export default function MultiCurrencyPage() {
                                     <Text size="" as="p" className="md:mt-[3rem] mt-[1rem] !text-[#FFFFFF] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
                                         Simplified Expense Tracking
                                     </Text>
-                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center text-[12px] font-normal text-left">
+                                    <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[80%] lg:w-[90%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                         <>
                                             See all your transactions categorized by currency, making budgeting and expense management a breeze.
                                         </>
@@ -261,7 +261,7 @@ export default function MultiCurrencyPage() {
                                             Get Account
                                         </Button>
                                     </div>
-                                    <Text size="" as="p" className=" !text-[#FFFFFF] 2xl:mt-[10rem] xl:mt-[8rem] lg:mt-[6rem] mt-[8rem] lg:w-[80%] 2xl:w-[70%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                    <Text size="" as="p" className=" !text-[#FFFFFF] 2xl:mt-[10rem] xl:mt-[8rem] lg:mt-[3rem] mt-[8rem] lg:w-[80%] 2xl:w-[70%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                         MULTICURRENCY BANK ACCOUNT
                                     </Text>
                                     <div className="bg-[#FFFFFF]  lg:h-[3px] w-[178px] h-[1px]" />
@@ -276,7 +276,7 @@ export default function MultiCurrencyPage() {
                                         <Text size="" as="p" className="md:mt-[2.5rem] mt-[2rem] !text-[#FFFFFF] lg:w-[70%] 2xl:w-[50%] text-[14px] lg:text-[20px]  !font-bold text-center text-align-center lg:text-left">
                                             Secure Transactions
                                         </Text>
-                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[70%] xl:w-[60%] lg:w-[60%] text-align-center text-[12px] font-normal text-left">
+                                        <Text size="5xl" as="p" className="!text-[#FFFFFF] w-[80%] md:w-[70%] xl:w-[60%] lg:w-[60%] text-align-center lg:text-[15px] text-[12px] font-normal text-left">
                                             <>
                                                 Enjoy peace of mind with industry-standard security measures protecting your Virtual Bank Accounts and your funds.
 
@@ -292,7 +292,7 @@ export default function MultiCurrencyPage() {
                                                 Get Account
                                             </Button>
                                         </div>
-                                        <Text size="" as="p" className=" !text-[#FFFFFF] 2xl:mt-[10rem] xl:mt-[8rem] lg:mt-[6rem] mt-[8rem] lg:w-[80%] 2xl:w-[70%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
+                                        <Text size="" as="p" className=" !text-[#FFFFFF] 2xl:mt-[10rem] xl:mt-[8rem] lg:mt-[4rem] mt-[8rem] lg:w-[80%] 2xl:w-[70%] text-[14px] lg:text-[17px]  !font-bold text-center text-align-center lg:text-left">
                                             MULTICURRENCY BANK ACCOUNT
                                         </Text>
                                         <div className="bg-[#FFFFFF]  lg:h-[3px] w-[178px] h-[1px]" />

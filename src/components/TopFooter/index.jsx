@@ -23,7 +23,7 @@ export default function TopFooter({ ...props }) {
                     <span className="text-white-A700 2xl:ml-3 ml-1  lg:block  hidden">TedFinance today!</span>
                     <span className="text-white-A700  text-center  text-align-center text-[28px] font-normal lg:hidden block">Start your financial journey with TedFinance today!</span>
                   </Text>
-                  <Text size="5xl" as="p" className=" lg:!text-[#FFFFFF] w-full text-[14px] font-light text-center text-align-center  lg:text-left !text-purple-400 mt-[1rem] 2xl:mt-0 xl:mt-0">
+                  <Text size="5xl" as="p" className=" lg:!text-[#FFFFFF] w-full lg:text-[15px] text-[14px] font-light text-center text-align-center  lg:text-left !text-purple-400 mt-[1rem] 2xl:mt-0 xl:mt-0">
                     Ready to take control of your finances? Join Ted Finance now, and let us help you achieve your
                     financial goals with our tailored solutions and exceptional support to empower your financial success.
                   </Text>
