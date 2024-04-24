@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Accordion = ({ main, items, toggleMenu }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [companyLink, setCompanyLink] = useState('');
+  const [learnLink, setlearnLink] = useState('');
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
@@ -19,6 +20,13 @@ const Accordion = ({ main, items, toggleMenu }) => {
     }
   }, [main, items]);
 
+  useEffect(() => {
+    if (main === "Learn") {
+      const links = items.map((item) => `/${item.path}`);
+      setlearnLink(links);
+    }
+  }, [main, items]);
+
   return (
     <div>
       <div className="m-2 flex w-full rounded-lg items-start justify-between mt-9">
@@ -26,24 +34,31 @@ const Accordion = ({ main, items, toggleMenu }) => {
           <a href={companyLink}>
             <p className="ml-1 cursor-pointer mt-1">{main}</p>
           </a>
-        ) : main === "Log In" ? (
-          <button className="bg-light_blue-300 w-[95%] text-white py-5 rounded-[10px]">
-            <div className="flex justify-between items-center">
-              <span className="ml-[1rem]">{main}</span>
-              <Img src='images/arrow-p-tray.svg' alt='icon' className="mr-[1.5rem]"/>
-            </div>
-          </button>
+        ) : main === "Learn" ? (
+          <a href={learnLink}>
+            <p className="ml-1 cursor-pointer mt-1">{main}</p>
+          </a>
+        ) :
+          main === "Log In" ? (
+            <button className="bg-light_blue-300 w-[95%] text-white py-5 rounded-[10px]">
+              <div className="flex justify-between items-center">
+                <span className="ml-[1rem]">{main}</span>
+                <Img src='images/arrow-p-tray.svg' alt='icon' className="mr-[1.5rem]" />
+              </div>
+            </button>
 
-        ) : main === "Get Started" ? (
-          <button className="bg-purple-400 0 w-[95%] text-white py-5 rounded-[10px]">
-            <div className="flex justify-between items-center">
-              <span className="ml-[1rem]">{main}</span>
-              <Img src='images/arrow-up-tray.svg' alt='icon' className="mr-[1.5rem]" />
-            </div>
-          </button>
-        ) : (
-          <p className="ml-1 cursor-pointer mt-1">{main}</p>
-        )}
+          ) : main === "Get Started" ? (
+            <button className="bg-purple-400 0 w-[95%] text-white py-5 rounded-[10px]">
+              <div className="flex justify-between items-center">
+                <span className="ml-[1rem]">{main}</span>
+                <Img src='images/arrow-up-tray.svg' alt='icon' className="mr-[1.5rem]" />
+              </div>
+            </button>
+          ) : main === "Products" ? (
+            <p className="ml-1 cursor-pointer mt-1" onClick={toggleAccordion}>{main}</p>
+          ) : (
+            <p className="ml-1 cursor-pointer mt-1">{main}</p>
+          )}
 
         {main !== "Log In" && main !== "Get Started" && (
           isOpen ? (
