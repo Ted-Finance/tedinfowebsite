@@ -75,7 +75,7 @@ export default function Footer({ ...props }) {
               <div className="flex flex-row md:hidden">
                 <div className="flex flex-row justify-start items-center xl:w-[22%] w-full gap-1.5">
                   <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_three" className="h-[18px] w-[18px]" />
-                  <Text as="p" className="text-center text-align-center font-normal text-[10px]">info@tedfinance.com</Text>
+                  <Text as="p" className="text-center text-align-center font-normal text-[10px]">Info@tedfinance.co</Text>
                 </div>
                 <div className="flex flex-row justify-start items-center xl:w-[19%] w-full gap-1.5 pl-[1rem]">
                   <Img src="images/img_icon_24x24.svg" alt="icon_five" className="h-[18px] w-[18px]" />
@@ -85,7 +85,7 @@ export default function Footer({ ...props }) {
               <div className="md:block hidden">
                 <div className="flex flex-row justify-start items-center xl:w-[22%] w-full gap-1.5">
                   <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_three" className="h-[24px] w-[24px]" />
-                  <Text as="p" className="text-center text-align-center font-normal text-[15px]">info@tedfinance.com</Text>
+                  <Text as="p" className="text-center text-align-center font-normal text-[15px]">Info@tedfinance.co</Text>
                 </div>
               </div>
               <div className="md:block hidden">

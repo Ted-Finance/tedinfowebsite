@@ -481,7 +481,7 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                         <div className="flex flex-row w-full sm:ml-[20rem]">
                           <div className="flex flex-row justify-start items-center 2xl:w-[22%] xl:w-[22%] w-full gap-1.5 sm:w-[40%]">
                             <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_three" className="h-[10px] w-[10px]" />
-                            <Text as="p" className="text-center text-align-center font-extralight text-[10px]">info@tedfinance.com</Text>
+                            <Text as="p" className="text-center text-align-center font-extralight text-[10px]">Info@tedfinance.co</Text>
                           </div>
                           <div className="flex flex-row justify-start items-center 2xl:w-[19%] xl:w-[19%] w-full gap-1.5">
                             <Img src="images/img_icon_24x24.svg" alt="icon_five" className="h-[10px] w-[10px] ml-[9px]" />
@@ -563,7 +563,7 @@ export default function SendReceiveMoneyDesktopTwoPage() {
                 <div className="flex 2xl:flex-row lg:flex-row xl:flex-row flex-col justify-start items-center w-full xl:pl-[150px] xl:pr-0 lg:pl-[56px]  pl-[326px] pr-14 gap-5 px-5 xl:gap-[4.25rem]">
                   <div className="flex flex-row justify-start items-center 2xl:w-[22%] xl:w-[22%] lg:w-[30%] w-full gap-1.5 sm:w-[40%]">
                     <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_three" className="h-[24px] w-[24px]" />
-                    <Text as="p" className="text-center text-align-center font-normal text-[15px]">info@tedfinance.com</Text>
+                    <Text as="p" className="text-center text-align-center font-normal text-[15px]">Info@tedfinance.co</Text>
                   </div>
                   <div className="flex flex-row justify-start items-center 2xl:w-[19%] xl:w-[19%] lg:w-[30%] w-full gap-1.5">
                     <Img src="images/img_icon_24x24.svg" alt="icon_five" className="h-[24px] w-[24px]" />

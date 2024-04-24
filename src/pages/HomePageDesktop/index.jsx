@@ -740,7 +740,7 @@ export default function HomePageDesktopPage() {
                     <span className="text-purple-400 2xl:text-[30px] lg:text-[30px] xl:text-[30px]  text-[20px] font-medium text-center text-align-center">Frequently Asked Questions</span>
                   </Text>
                   <Text size="5xl" as="p" className="!text-gray-900_01 text-center text-align-center w-full text-[14px] font-light text-align-center 2xl:text-left lg:text-left xl:text-left">
-                    Still you have any questions? Contact our Team via info@tedfinance.com
+                    Still you have any questions? Contact our Team via Info@tedfinance.co
                   </Text>
                 </div>
                 <div className="flex flex-col items-center justify-start w-full mt-14 2xl:mt-20">
@@ -1050,7 +1050,7 @@ export default function HomePageDesktopPage() {
                         <div className="flex flex-row w-full sm:ml-[20rem]">
                           <div className="flex flex-row justify-start items-center 2xl:w-[22%] xl:w-[22%] w-full gap-1.5 sm:w-[40%]">
                             <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_three" className="h-[10px] w-[10px]" />
-                            <Text as="p" className="text-center text-align-center font-extralight text-[10px]">info@tedfinance.com</Text>
+                            <Text as="p" className="text-center text-align-center font-extralight text-[10px]">Info@tedfinance.co</Text>
                           </div>
                           <div className="flex flex-row justify-start items-center 2xl:w-[19%] xl:w-[19%] w-full gap-1.5">
                             <Img src="images/img_icon_24x24.svg" alt="icon_five" className="h-[10px] w-[10px] ml-[9px]" />
@@ -1134,7 +1134,7 @@ export default function HomePageDesktopPage() {
                       <div className="flex 2xl:flex-row lg:flex-row xl:flex-row flex-col justify-start items-center w-full xl:pl-[150px] xl:pr-0 lg:pl-[56px]  pl-[326px] pr-14 gap-5 px-5 xl:gap-[4.25rem]">
                         <div className="flex flex-row justify-start items-center 2xl:w-[22%] xl:w-[22%] w-full gap-1.5">
                           <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_three" className="h-[24px] w-[24px]" />
-                          <Text as="p" className="text-center text-align-center font-normal text-[15px]">info@tedfinance.com</Text>
+                          <Text as="p" className="text-center text-align-center font-normal text-[15px]">Info@tedfinance.co</Text>
                         </div>
                         <div className="flex flex-row justify-start items-center 2xl:w-[19%] xl:w-[19%] w-full gap-1.5">
                           <Img src="images/img_icon_24x24.svg" alt="icon_five" className="h-[24px] w-[24px]" />

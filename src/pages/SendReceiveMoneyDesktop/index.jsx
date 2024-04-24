@@ -377,7 +377,7 @@ export default function SendReceiveMoneyDesktopPage() {
               <div className="flex flex-row md:flex-col justify-start items-center w-full pl-[326px] pr-14 gap-5 md:px-5">
                 <div className="flex flex-row justify-start items-center w-[22%] md:w-full gap-1.5">
                   <Img src="images/img_icon_lime_500_24x24.svg" alt="icon_one" className="h-[24px] w-[24px]" />
-                  <Text as="p">info@tedfinance.com</Text>
+                  <Text as="p">Info@tedfinance.co</Text>
                 </div>
                 <div className="flex flex-row justify-start items-center w-[19%] md:w-full gap-1.5">
                   <Img src="images/img_icon_24x24.svg" alt="icon_three" className="h-[24px] w-[24px]" />
