@@ -1,6 +1,6 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import Home from "pages/Home";
+// import Home from "pages/Home";
 import NotFound from "pages/NotFound";
 import HomePageDesktop from "pages/HomePageDesktop";
 import SendReceiveMoneyDesktopTwo from "pages/SendReceiveMoneyDesktopTwo";
@@ -9,7 +9,7 @@ import SendReceiveMoneyDesktopThree from "pages/SendReceiveMoneyDesktopThree";
 import SendReceiveMoneyDesktopOne from "pages/SendReceiveMoneyDesktopOne";
 import SendReceiveMoneyDesktopFour from "pages/SendReceiveMoneyDesktopFour";
 import ExchangeDesktop from "pages/ExchangeDesktop";
-import MacBookPro16One from "pages/MacBookPro16One";
+// import MacBookPro16One from "pages/MacBookPro16One";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
