@@ -7,16 +7,23 @@ export default function MacBookPro16OnePage() {
     <>
       <Helmet>
         <title>Ted Finance</title>
-        <meta name="description" content="Web site created using create-react-app" />
+        <meta
+          name="description"
+          content="Web site created using create-react-app"
+        />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full gap-[19px] p-[42px] md:p-5 bg-gradient2">
         <header className="flex flex-row md:flex-col justify-between items-center w-[84%] md:gap-10">
-          <Img src="images/img_group_150x207.svg" alt="image" className="h-[183px]" />
+          <Img
+            src="images/img_group_150x207.svg"
+            alt="image"
+            className="h-[183px]"
+          />
           <div className="flex flex-col items-start justify-start w-full gap-[86px] mx-auto md:px-5 max-w-[964px]">
             <div className="flex flex-row md:flex-col justify-between items-center w-full md:gap-10">
               <div className="flex flex-row sm:flex-col justify-between w-[56%] md:w-full sm:gap-10">
                 <a
-                  href="#"
+                  href="/"
                   className="flex justify-center items-center w-[100px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
                 >
                   <Text as="p" className="!text-white-A700">
@@ -24,7 +31,7 @@ export default function MacBookPro16OnePage() {
                   </Text>
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="flex justify-center items-center w-[126px] h-[51px] px-6 py-3.5 sm:px-5 bg-purple-400 rounded-[25px]"
                 >
                   <Text as="p" className="!text-white-A700">
@@ -44,7 +51,10 @@ export default function MacBookPro16OnePage() {
               </div>
               <ul className="flex flex-row justify-start items-center gap-[30px]">
                 <li>
-                  <a href="#" className="cursor-pointer hover:bg-light_blue-300">
+                  <a
+                    href="/"
+                    className="cursor-pointer hover:bg-light_blue-300"
+                  >
                     <Text as="p" className="!text-white-A700">
                       Sign Up
                     </Text>
@@ -52,7 +62,7 @@ export default function MacBookPro16OnePage() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-white-A700 hover:font-normal"
                   >
                     <Text as="p" className="!text-gray-900_05 !font-medium">
@@ -83,10 +93,22 @@ export default function MacBookPro16OnePage() {
             <div className="h-[545px] w-full mt-2 relative">
               <div className="flex flex-row sm:flex-col justify-start items-center w-[37%] bottom-0 left-[23%] m-auto sm:gap-5 absolute">
                 <div className="flex flex-row justify-start items-center w-[98%] sm:w-full">
-                  <Img src="images/img_bitcoin_logo.svg" alt="bitcoinlogo_one" className="h-[89px] w-[89px]" />
-                  <Img src="images/img_currency.svg" alt="currency_one" className="h-[250px] w-[250px] ml-[-24px]" />
+                  <Img
+                    src="images/img_bitcoin_logo.svg"
+                    alt="bitcoinlogo_one"
+                    className="h-[89px] w-[89px]"
+                  />
+                  <Img
+                    src="images/img_currency.svg"
+                    alt="currency_one"
+                    className="h-[250px] w-[250px] ml-[-24px]"
+                  />
                 </div>
-                <Img src="images/img_path0.svg" alt="pathzero_one" className="h-[65px] ml-[-33px] sm:ml-0" />
+                <Img
+                  src="images/img_path0.svg"
+                  alt="pathzero_one"
+                  className="h-[65px] ml-[-33px] sm:ml-0"
+                />
               </div>
               <div className="flex flex-col items-end justify-start w-[82%] left-0 top-[5%] m-auto absolute">
                 <div className="flex flex-row md:flex-col justify-end items-center w-full md:gap-5">
@@ -106,7 +128,11 @@ export default function MacBookPro16OnePage() {
                           />
                           <div className="h-[9px] w-[58%] bg-deep_purple-A100 rounded-[5px]" />
                         </div>
-                        <Img src="images/img_confetti_arch.svg" alt="confettiarch" className="h-[11px]" />
+                        <Img
+                          src="images/img_confetti_arch.svg"
+                          alt="confettiarch"
+                          className="h-[11px]"
+                        />
                       </div>
                       <div className="flex flex-row sm:flex-col justify-between items-start w-full mt-[-4px] sm:gap-10">
                         <Img
@@ -155,7 +181,11 @@ export default function MacBookPro16OnePage() {
             </div>
             <div className="flex flex-row justify-center w-[41%] md:w-full mt-[27px] pb-[9px]">
               <div className="flex flex-row justify-between items-center w-full p-[3px] border-gray-300 border border-solid bg-white-A700 rounded-lg">
-                <Text size="md" as="p" className="ml-[9px] !text-gray-600 tracking-[0.10px] !font-poppins">
+                <Text
+                  size="md"
+                  as="p"
+                  className="ml-[9px] !text-gray-600 tracking-[0.10px] !font-poppins"
+                >
                   Email
                 </Text>
                 <Button
@@ -166,7 +196,11 @@ export default function MacBookPro16OnePage() {
                 </Button>
               </div>
             </div>
-            <Text size="md" as="p" className="mt-[11px] !text-black-900_02 tracking-[0.10px] !font-poppins">
+            <Text
+              size="md"
+              as="p"
+              className="mt-[11px] !text-black-900_02 tracking-[0.10px] !font-poppins"
+            >
               Subscribe to our mailing list to get latest updates
             </Text>
             <div className="flex flex-row justify-between w-[54%] md:w-full mt-[22px]">
@@ -186,7 +220,11 @@ export default function MacBookPro16OnePage() {
                 <Img src="images/img_icons_linkedin.png" />
               </Button>
             </div>
-            <Text size="s" as="p" className="mt-[25px] !text-gray-600 tracking-[0.08px] !font-poppins text-center">
+            <Text
+              size="s"
+              as="p"
+              className="mt-[25px] !text-gray-600 tracking-[0.08px] !font-poppins text-center"
+            >
               © Copyrights Ted Finance | All Rights Reserved
             </Text>
           </div>

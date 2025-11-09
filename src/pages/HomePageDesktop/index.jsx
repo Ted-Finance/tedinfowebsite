@@ -6,7 +6,7 @@ import {
   Button,
   Img,
   Heading,
-  Input,
+  // Input,
   ProductDropDown,
   HambugerMenu,
 } from "../../components";
@@ -218,7 +218,7 @@ export default function HomePageDesktopPage() {
                       <ul className="flex flex-row justify-start items-center gap-[30px]">
                         <li>
                           <a
-                            href="#"
+                            href="/"
                             className="cursor-pointer hover:bg-light_blue-300"
                           >
                             <p className="!text-white-A700">Sign Up</p>
@@ -226,7 +226,7 @@ export default function HomePageDesktopPage() {
                         </li>
                         <li>
                           <a
-                            href="#"
+                            href="/"
                             className="flex justify-center items-center w-[110px] h-[55px] px-[30px] py-4 sm:px-5 bg-light_blue-300 cursor-pointer rounded-[27px] hover:text-white-A700 hover:font-normal"
                           >
                             <p className="!text-gray-900_05 !font-medium">
@@ -627,7 +627,7 @@ export default function HomePageDesktopPage() {
                         </div>
                       </div>
                       <a
-                        href="#"
+                        href="/"
                         className="flex justify-center items-center w-[148px] h-[63px] px-6 py-5 sm:px-5 bg-purple-400 rounded-[31px] md:ml-[6.5rem]"
                       >
                         <Text
@@ -695,7 +695,7 @@ export default function HomePageDesktopPage() {
                         </div>
                       </div>
                       <a
-                        href="#"
+                        href="/"
                         className="flex justify-center items-center w-[148px] h-[63px] px-6 py-5 sm:px-5 bg-purple-400 rounded-[31px]"
                       >
                         <Text as="p" className="!text-white-A700 text-center">
@@ -859,7 +859,7 @@ export default function HomePageDesktopPage() {
                       </div>
                     </div>
                     <a
-                      href="#"
+                      href="/"
                       className="flex justify-center items-center w-[148px] h-[63px] px-6 py-5 sm:px-5 bg-purple-400 rounded-[31px] md:mt-[2rem] md:ml-[6rem]"
                     >
                       <Text
@@ -1475,22 +1475,22 @@ export default function HomePageDesktopPage() {
                       <div className="flex flex-row justify-center w-full">
                         <ul className="flex flex-row justify-between w-[24%] md:w-[90%] md:font-normal md:text-[14px] md:text-center md:text-align-center">
                           <li>
-                            <a href="#">
+                            <a href="/">
                               <Text as="p">Home</Text>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="/">
                               <Text as="p">Careers</Text>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="/">
                               <Text as="p">About</Text>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="/">
                               <Text as="p">Security</Text>
                             </a>
                           </li>
@@ -1573,7 +1573,7 @@ export default function HomePageDesktopPage() {
                           TedFinance All Rights Reserved
                         </Text>
                         <div className="flex flex-row justify-start items-center w-[21%] md:w-full mr-3.5 md:mr-[-3rem] gap-3">
-                          <a href="#">
+                          <a href="/">
                             <Text
                               as="p"
                               className="!text-gray-400 !font-light md:text-center md:text-align-center md:w-full md:font-normal md:text-[15px]"
@@ -1582,7 +1582,7 @@ export default function HomePageDesktopPage() {
                             </Text>
                           </a>
                           <div className="h-[27px] w-px bg-gray-400" />
-                          <a href="#">
+                          <a href="/">
                             <Text
                               as="p"
                               className="!text-gray-400 !font-light md:text-center md:text-align-center md:w-full md:font-normal md:text-[15px]"
@@ -1609,22 +1609,22 @@ export default function HomePageDesktopPage() {
                 <div className="flex flex-row justify-center w-full">
                   <ul className="flex flex-row justify-between w-[24%]">
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <Text as="p">Home</Text>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <Text as="p">Careers</Text>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <Text as="p">About</Text>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/">
                         <Text as="p">Security</Text>
                       </a>
                     </li>
@@ -1692,13 +1692,13 @@ export default function HomePageDesktopPage() {
                     TedFinance All Rights Reserved
                   </Text>
                   <div className="flex flex-row justify-start items-center w-[21%] md:w-full mr-3.5 gap-3">
-                    <a href="#">
+                    <a href="/">
                       <Text as="p" className="!text-gray-400 !font-light">
                         Privacy Policy
                       </Text>
                     </a>
                     <div className="h-[27px] w-px bg-gray-400" />
-                    <a href="#">
+                    <a href="/">
                       <Text as="p" className="!text-gray-400 !font-light">
                         Terms of Service
                       </Text>
